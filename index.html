@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRE Inmobiliaria de México - Propiedades en Tehuacán</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">IRE Inmobiliaria</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#venta">En Venta</a></li>
+                <li><a href="#renta">En Renta</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="tel:2228515440" class="btn-phone">
+                <i class="fas fa-phone"></i>
+                222 851 5440
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Encuentra tu propiedad ideal en Tehuacán</h1>
+                <p>Casas, departamentos y terrenos en venta y renta. 
+                   Más de 10 años de experiencia en el mercado inmobiliario.</p>
+                <div class="hero-buttons">
+                    <a href="#venta" class="btn btn-primary">Ver propiedades</a>
+                    <a href="tel:2228515440" class="btn btn-outline">Llamar ahora</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Propiedades vendidas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Clientes satisfechos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propiedades en Venta -->
+    <section id="venta" class="properties-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Propiedades en Venta</h2>
+                <p>Encuentra tu nuevo hogar o inversión</p>
+            </div>
+            <div class="properties-grid" id="venta-grid">
+                <!-- Las propiedades se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Propiedades en Renta -->
+    <section id="renta" class="properties-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Propiedades en Renta</h2>
+                <p>Alquila tu espacio ideal</p>
+            </div>
+            <div class="properties-grid" id="renta-grid">
+                <!-- Las propiedades se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>¿Interesado en alguna propiedad?</h2>
+<p>Contáctanos y te ayudamos a encontrar lo que buscas.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span class="label">Teléfono</span>
+                                <a href="tel:2228515440">222 851 5440</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span class="label">WhatsApp</span>
+                                <a href="https://wa.me/522228515440">222 851 5440</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="label">Email</span>
+                                <a href="mailto:contacto@ireinmobiliaria.com">contacto@ireinmobiliaria.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="label">Ubicación</span>
+                                <span>Tehuacán, Puebla, México</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <div class="form-group">
+                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Tu email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" rows="4" placeholder="¿En qué propiedad estás interesado?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">IRE Inmobiliaria de México</span>
+                    <p>Tu aliado en el mercado inmobiliario de Tehuacán</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#venta">Propiedades en venta</a></li>
+                        <li><a href="#renta">Propiedades en renta</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+<div class="footer-bottom">
+                <p>&copy; 2026 IRE Inmobiliaria de México. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
