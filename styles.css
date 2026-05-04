@@ -71,8 +71,9 @@ body {
 
 .logo-img {
     height: 40px;
-    width: auto;
+    width: 40px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .nav-links {
