@@ -158,8 +158,8 @@ function crearTarjetaPropiedad(prop) {
                     ${features.join('')}
                 </div>
                 <div class="property-actions">
-                    <a href="${prop.zip}" class="btn btn-primary" download>
-                        <i class="fas fa-download"></i> Fotos
+                    <a href="propiedad.html?id=${prop.id}" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Ver detalles
                     </a>
                     <a href="https://wa.me/522228515440?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(prop.titulo)}" class="btn btn-outline" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contactar

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad - IRE Inmobiliaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="propiedad.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">IRE Inmobiliaria</span>
+            </a>
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i>
+                Volver
+            </a>
+        </div>
+    </nav>
+
+    <!-- Property Detail -->
+    <main class="property-detail">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <span id="breadcrumb-tipo">Propiedad</span>
+                <span>/</span>
+                <span id="breadcrumb-nombre">Cargando...</span>
+            </nav>
+
+            <!-- Gallery -->
+            <section class="gallery-section">
+                <div class="gallery-main">
+                    <img id="main-image" src="" alt="Propiedad">
+                    <button class="gallery-nav gallery-prev" onclick="changeImage(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav gallery-next" onclick="changeImage(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="gallery-counter">
+                        <span id="current-image">1</span> / <span id="total-images">1</span>
+                    </div>
+                </div>
+                <div class="gallery-thumbs" id="gallery-thumbs">
+                    <!-- Thumbnails se generan dinámicamente -->
+                </div>
+            </section>
+
+            <!-- Property Info -->
+            <div class="property-layout">
+                <div class="property-main">
+                    <!-- Header -->
+                    <header class="property-header">
+                        <span class="property-type-badge" id="property-type">Tipo</span>
+                        <h1 id="property-title">Título de la propiedad</h1>
+                        <div class="property-location-main">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="property-location">Ubicación</span>
+                        </div>
+                        <div class="property-price-main" id="property-price">$0</div>
+                    </header>
+
+                    <!-- Characteristics -->
+                    <section class="characteristics-section">
+                        <h2>Características</h2>
+                        <div class="characteristics-grid" id="characteristics-grid">
+                            <!-- Se genera dinámicamente -->
+                        </div>
+                    </section>
+
+                    <!-- Description -->
+                    <section class="description-section">
+                        <h2>Descripción</h2>
+                        <div class="description-content" id="property-description">
+                            <!-- Se carga dinámicamente -->
+                        </div>
+                    </section>
+
+                    <!-- Amenities -->
+                    <section class="amenities-section" id="amenities-section">
+                        <h2>Amenidades</h2>
+                        <div class="amenities-grid" id="amenities-grid">
+                            <!-- Se genera dinámicamente -->
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="property-sidebar">
+                    <!-- Contact Card -->
+                    <div class="contact-card">
+                        <h3>¿Te interesa esta propiedad?</h3>
+                        <p>Contáctanos y agenda una visita</p>
+                        <a href="tel:2228515440" class="btn btn-primary btn-full">
+                            <i class="fas fa-phone"></i>
+                            222 851 5440
+                        </a>
+                        <a href="#" class="btn btn-whatsapp btn-full" id="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-section">
+                        <h3>Ubicación</h3>
+                        <div class="map-container">
+                            <iframe id="property-map" src="" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-full" id="maps-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver en Google Maps
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Similar Properties -->
+            <section class="similar-section">
+                <h2>Propiedades similares</h2>
+                <div class="properties-grid" id="similar-properties">
+                    <!-- Se genera dinámicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">IRE Inmobiliaria de México</span>
+                    <p>Tu aliado en el mercado inmobiliario de Tehuacán</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#venta">Propiedades en venta</a></li>
+                        <li><a href="index.html#renta">Propiedades en renta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRE Inmobiliaria de México. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="propiedad.js"></script>
+</body>
+</html>
