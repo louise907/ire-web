@@ -215,6 +215,33 @@ Tehuacán, Puebla
         fotos: 7,
         folder: 'propiedades-venta/terreno-parque-industrial2',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-parque-industrial2/fotos-parque-industrial2.zip`
+    },
+    'casa-primavera': {
+        id: 'casa-primavera',
+        tipo: 'venta',
+        categoria: 'Casa',
+        titulo: 'Casa Primavera',
+        ubicacion: 'Calle Jazmín #123, Col. Flores, Tehuacán, Puebla',
+        precio: 850000,
+        precioTexto: '$850,000',
+        coordenadas: { lat: 18.464861, lng: -97.406222 },
+        descripcion: `✨ Casa de 2 niveles en excelente ubicación ✨
+💰 Precio: $850,000 MXN
+
+Si buscas una casa con espacios amplios, buena iluminación y una ubicación privilegiada, esta propiedad en Colonia Flores es ideal para ti. 🏡
+
+Cuenta con 3 recámaras, 2 baños, cochera para 2 autos y un hermoso jardín trasero.`,
+        caracteristicas: [
+            { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+            { icon: 'fa-bath', label: 'Baños', value: '2' },
+            { icon: 'fa-ruler-combined', label: 'Construcción', value: '180 m²' },
+            { icon: 'fa-home', label: 'Terreno', value: '250 m²' },
+            { icon: 'fa-car', label: 'Estacionamiento', value: '2' }
+        ],
+        amenidades: ['Jardín', 'Cisterna', 'Dos plantas', 'Mascotas permitidas'],
+        fotos: 1,
+        folder: 'propiedades-venta/casa-francisco-sarabia',
+        zip: null
     }
 };
 
