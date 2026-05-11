@@ -97,6 +97,21 @@ const propiedades = [
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/jazmin/fotos-jazmin.zip`
     },
     {
+        id: 'casa-primavera',
+        tipo: 'venta',
+        categoria: 'Casa',
+        titulo: 'Casa Primavera',
+        ubicacion: 'Col. Flores, Tehuacán',
+        precio: 850000,
+        precioTexto: '$850,000',
+        metros: 180,
+        habitaciones: 3,
+        banos: 2,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-francisco-sarabia/1.webp`,
+        fotos: 1,
+        zip: null
+    },
+    {
         id: 'departamento-valsequillo',
         tipo: 'renta',
         categoria: 'Departamento',
