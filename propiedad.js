@@ -160,29 +160,6 @@ Su arquitectura y distribución la hacen ideal para familias que valoran el conf
         folder: 'propiedades-venta/casa-valle-luna',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-valle-luna/fosos-valle-luna.zip`
     },
-    'terreno-bicentenarios': {
-        id: 'terreno-bicentenarios',
-        tipo: 'venta',
-        categoria: 'Terreno',
-        titulo: 'Terreno Bicentenarios',
-        ubicacion: 'Fraccionamiento Bicentenario, Tehuacán, Puebla',
-        precio: 588000,
-        precioTexto: '$588,000',
-        coordenadas: { lat: 18.439861, lng: -97.402972 },
-        descripcion: `✨ 𝗘𝘅𝗰𝗲𝗹𝗲𝗻𝘁𝗲 𝗼𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝗱𝗮𝗱 𝗱𝗲 𝗶𝗻𝘃𝗲𝗿𝘀𝗶𝗼́𝗻 en Fracc. Bicentenario 🏗️ Tehuacán, Puebla.📍
-💰 Precio: $588,000 MXN
-
-Si buscas un terreno con 𝘂𝗯𝗶𝗰𝗮𝗰𝗶𝗼́𝗻 𝗲𝘀𝘁𝗿𝗮𝘁𝗲́𝗴𝗶𝗰𝗮, 𝘀𝗲𝗴𝘂𝗿𝗶𝗱𝗮𝗱 𝘆 𝗮𝗺𝗲𝗻𝗶𝗱𝗮𝗱𝗲𝘀, esta es tu oportunidad.`,
-        caracteristicas: [
-            { icon: 'fa-ruler-combined', label: 'Terreno', value: '98 m²' },
-            { icon: 'fa-arrows-alt-h', label: 'Frente', value: '7 m' },
-            { icon: 'fa-arrows-alt-v', label: 'Largo', value: '14 m' }
-        ],
-        amenidades: ['Fraccionamiento privado', 'Portero', 'Área de juegos infantiles'],
-        fotos: 4,
-        folder: 'propiedades-venta/terreno-bicentenarios',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-bicentenarios/fotosBicentenario.zip`
-    },
     'terreno-parque-industrial2': {
         id: 'terreno-parque-industrial2',
         tipo: 'venta',
