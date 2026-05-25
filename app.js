@@ -21,22 +21,7 @@ const propiedades = [
         fotos: 7,
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-parque-industrial2/fotos-parque-industrial2.zip`
     },
-    {
-        id: 'terreno-bicentenarios',
-        tipo: 'venta',
-        categoria: 'Terreno',
-        titulo: 'Terreno Bicentenarios',
-        ubicacion: 'Santo Domingo, Tehuacán',
-        precio: 588000,
-        precioTexto: '$588,000',
-        metros: 98,
-        habitaciones: null,
-        banos: null,
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-bicentenarios/1.webp`,
-        fotos: 4,
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-bicentenarios/fotosBicentenario.zip`
-    },
-    {
+        {
         id: 'casa-valle-luna',
         tipo: 'venta',
         categoria: 'Casa',
