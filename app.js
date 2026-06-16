@@ -77,9 +77,9 @@ const propiedades = [
     metros: 400,
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/1.webp`,
     fotos: 3, 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
 },
     {
     id: 'bodega-san-diego',
@@ -92,9 +92,9 @@ const propiedades = [
     metros: 900,
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/1.webp`,
     fotos: 12, 
-    zip: `${SUPABASE_URL}/https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/fotos-bodega-san-diego.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/fotos-bodega-san-diego.zip`
     },
     {
     id: 'bodega-av-cuauhtemoc',
@@ -107,9 +107,9 @@ const propiedades = [
     metros: 720,
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}/https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/1.webp`,
     fotos: 1, 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
     },{
     id: 'oficina-2-norte',
     tipo: 'renta',
@@ -121,9 +121,9 @@ const propiedades = [
     metros: 0, // 
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/consultorios-2-norte/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/consultorios-2-norte/1.webp`,
     fotos: 2, 
-    zip: `${SUPABASE_URL}/https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/consultorios-2-norte/fotos-consultorios-2-norte.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/consultorios-2-norte/fotos-consultorios-2-norte.zip`
 },{
     id: 'departamento-privada-1-poniente',
     tipo: 'renta',
@@ -135,9 +135,9 @@ const propiedades = [
     metros: 0, 
     habitaciones: 3,
     banos: 2,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/photo_4972208000370150671_y.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/photo_4972208000370150671_y.webp`,
     fotos: 10, // 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },{
     id: 'espacio-comercial-centro',
     tipo: 'renta',
@@ -149,9 +149,9 @@ const propiedades = [
     metros: 65,
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/1.webp`,
     fotos: 7, 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/fotos-terraza-royal-place.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/fotos-terraza-royal-place.zip`
 },{
     id: 'local-oficina-centro',
     tipo: 'renta',
@@ -163,9 +163,9 @@ const propiedades = [
     metros: 0, 
     habitaciones: null,
     banos: null,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
     fotos: 2, 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
 },{
     id: 'bodega-santa-cruz-buenavista',
     tipo: 'renta',
@@ -177,9 +177,9 @@ const propiedades = [
     metros: 2750,
     habitaciones: null,
     banos: 5,
-    imagen: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/1.webp`,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/1.webp`,
     fotos: 13, 
-    zip: `${SUPABASE_URL}https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz-buenavista.zip`
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz-buenavista.zip`
 }
 ];
 // Función para crear tarjeta de propiedad
