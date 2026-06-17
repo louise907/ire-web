@@ -4,80 +4,7 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
-    '16norte-cuartos': {
-        id: '16norte-cuartos',
-        tipo: 'renta',
-        categoria: 'Cuarto',
-        titulo: 'Cuartos 16 Norte',
-        ubicacion: 'Calle 16 Norte #127, Col. Aquiles Serdán, Tehuacán',
-        precio: 2500,
-        precioTexto: '$2,500/mes',
-        coordenadas: { lat: 18.464861, lng: -97.406222 },
-        descripcion: `✨ 𝗘𝘀𝗽𝗮𝗰𝗶𝗼 𝗳𝘂𝗻𝗰𝗶𝗼𝗻𝗮𝗹 𝘆 𝗰𝗼́𝗺𝗼𝗱𝗼 en Calle 16 Norte #127 🏠 Col. Aquiles Serdán, Tehuacán.📍
-💰 Renta mensual: $2,500 MXN
-
-Si buscas un espacio 𝗮𝗰𝗰𝗲𝘀𝗶𝗯𝗹𝗲, 𝘀𝗲𝗴𝘂𝗿𝗼 𝘆 𝗯𝗶𝗲𝗻 𝘂𝗯𝗶𝗰𝗮𝗱𝗼, este cuarto independiente es tu mejor opción.`,
-        caracteristicas: [
-            { icon: 'fa-bed', label: 'Recámaras', value: '1' },
-            { icon: 'fa-bath', label: 'Baños', value: '1' },
-            { icon: 'fa-ruler-combined', label: 'Construcción', value: '30 m²' },
-            { icon: 'fa-car', label: 'Estacionamiento', value: '0' }
-        ],
-        amenidades: ['Cisterna', 'Mascotas permitidas'],
-        fotos: 5,
-        folder: 'propiedades-renta/16norte-cuartos',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
-    },
-    'departamento-valsequillo': {
-        id: 'departamento-valsequillo',
-        tipo: 'renta',
-        categoria: 'Departamento',
-        titulo: 'Departamento Valsequillo',
-        ubicacion: 'Boulevard Valsequillo, Edificio 145 #7, Tehuacán, Puebla',
-        precio: 5000,
-        precioTexto: '$5,000/mes',
-        coordenadas: { lat: 18.460639, lng: -97.416389 },
-        descripcion: `🏢✨ ¡Haz de este espacio tu próximo hogar! Departamento en Renta en Tehuacán ✨🏢
-
-📍 Boulevard Valsequillo, Edificio 145 #7, Tehuacán, Puebla
-💲 Renta mensual: $5,000
-
-Si buscas comodidad, buena iluminación y una distribución práctica que te permita adaptar el espacio a tus necesidades, este departamento es ideal para ti.`,
-        caracteristicas: [
-            { icon: 'fa-bed', label: 'Recámaras', value: '2' },
-            { icon: 'fa-bath', label: 'Baños', value: '1' },
-            { icon: 'fa-ruler-combined', label: 'Construcción', value: '60 m²' },
-            { icon: 'fa-car', label: 'Estacionamiento', value: '1' }
-        ],
-        amenidades: ['Cisterna', 'Patio', 'Cocina', 'Mascotas permitidas', 'Permitido fumar'],
-        fotos: 8,
-        folder: 'propiedades-renta/departamento-valsequillo',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-valsequillo/fotos-valsequillo.zip`
-    },
-    'jazmin': {
-        id: 'jazmin',
-        tipo: 'renta',
-        categoria: 'Casa',
-        titulo: 'Casa Jazmín',
-        ubicacion: 'Colonia Jacarandas, Tehuacán, Puebla',
-        precio: 5300,
-        precioTexto: '$5,300/mes',
-        coordenadas: { lat: 18.468611, lng: -97.395194 },
-        descripcion: `✨ 𝗩𝗲𝗿𝘀𝗮𝘁𝗶𝗹 𝗰𝗮𝘀𝗮 𝗲𝗻 𝗿𝗲𝗻𝘁𝗮 en Colonia Jacarandas 🌸 Tehuacán, Puebla.📍
-💰 Renta mensual: $5,300 MXN
-
-Si buscas un espacio con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳𝗶𝗻𝗶𝘁𝗼, 𝘂𝗯𝗶𝗰𝗮𝗰𝗶𝗼́𝗻 𝗲𝘀𝘁𝗿𝗮𝘁𝗲́𝗴𝗶𝗰𝗮 𝘆 𝘃𝗲𝗿𝘀𝗮𝘁𝗶𝗹𝗶𝗱𝗮𝗱, esta propiedad es para ti.`,
-        caracteristicas: [
-            { icon: 'fa-bed', label: 'Recámaras', value: '2' },
-            { icon: 'fa-bath', label: 'Baños', value: '1' },
-            { icon: 'fa-ruler-combined', label: 'Terreno', value: '92 m²' },
-            { icon: 'fa-home', label: 'Construcción', value: '92 m²' }
-        ],
-        amenidades: ['Una planta', 'Interior y exterior'],
-        fotos: 10,
-        folder: 'propiedades-renta/jazmin',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/jazmin/fotos-jazmin.zip`
-    },
+    
     'casa-cinco-bosques': {
         id: 'casa-cinco-bosques',
         tipo: 'venta',
@@ -192,7 +119,378 @@ Tehuacán, Puebla
         fotos: 7,
         folder: 'propiedades-venta/terreno-parque-industrial2',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-parque-industrial2/fotos-parque-industrial2.zip`
-    }
+    },'bodega-san-diego': {
+    id: 'bodega-san-diego',
+    tipo: 'renta',
+    categoria: 'Bodega',
+    titulo: 'Bodega San Diego',
+    ubicacion: 'San Diego, Tehuacán, Puebla',
+    precio: 60000,
+    precioTexto: '$60,000/mes (negociable)',
+    
+    // 📍 COORDENADAS (aproximadas para San Diego, Tehuacán)
+    coordenadas: { 
+        lat: 18.451667,    // Aproximado - San Diego
+        lng: -97.394444    // Aproximado - San Diego
+    },
+    
+    // 📝 DESCRIPCIÓN: Solo texto narrativo (sin datos repetidos)
+    descripcion: `🏭 Impresionante bodega industrial en renta en la zona de San Diego, uno de los polos de desarrollo industrial más importantes de Tehuacán.
+
+📐 Con 900 m² de espacio, esta propiedad ofrece la versatilidad y capacidad necesaria para proyectos de gran envergadura, desde operaciones logísticas hasta producción manufacturera.
+
+🏢 Cuenta con áreas de oficinas integradas, lo que permite centralizar la administración y las operaciones en un mismo lugar, optimizando la eficiencia de tu negocio.
+
+💼 Ideal para corporativos, grandes empresas de logística o fábricas que buscan un espacio funcional y bien ubicado.
+
+⚡ ¡Excelente oportunidad con precio negociable! Aprovecha este espacio único para impulsar tu negocio al siguiente nivel.`,
+    
+    // 📊 CARACTERÍSTICAS: Solo datos medibles
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '900 m²' },
+        { icon: 'fa-building', label: 'Oficinas', value: 'Integradas' },
+        { icon: 'fa-warehouse', label: 'Uso', value: 'Industrial/Corporativo' },
+        { icon: 'fa-truck', label: 'Acceso', value: 'Carga pesada' }
+    ],
+    
+    amenidades: [   
+        'Oficinas integradas',
+        'Zona industrial',
+        'Estacionamiento',
+        'Fácil acceso',
+        'Patio de maniobras',
+        'Precio negociable'],
+    
+    fotos: 10,
+    folder: 'propiedades-renta/bodega-san-diego',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/fotos-bodega-san-diego.zip`
+},
+     'bodega-av-cuauhtemoc': {
+    id: 'bodega-av-cuauhtemoc',
+    tipo: 'renta',
+    categoria: 'Bodega',
+    titulo: 'Bodega Av. Cuauhtémoc',
+    ubicacion: 'Av. Cuauhtémoc (atrás del Oxxo, casi llegando a Las Palmas), Tehuacán, Puebla',
+    precio: 35000,
+    precioTexto: '$35,000/mes',
+    coordenadas: { 
+        lat: 18.481806,  
+        lng: -97.397444  
+    },
+    
+    // 📝 DESCRIPCIÓN: SOLO TEXTO NARRATIVO
+    descripcion: `🏭 Excelente bodega en renta en Av. Cuauhtémoc, una de las zonas con mayor movimiento comercial de Tehuacán.
+    💡 Cuenta con conexión eléctrica bifásica, ideal para negocios que requieren mayor capacidad de energía.
+    📍 Ubicación estratégica: atrás del Oxxo, casi llegando a Las Palmas, con fácil acceso para carga y descarga.
+    🚛 Perfecta para almacenamiento comercial, punto de venta mayorista o logística urbana.`,
+    
+    // 📊 CARACTERÍSTICAS: DATOS MEDIBLES
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '720 m²' },
+        { icon: 'fa-bolt', label: 'Tipo de luz', value: 'Bifásica' },
+        { icon: 'fa-door-open', label: 'Acceso', value: 'Calle principal' }
+    ],
+    amenidades: [],
+    fotos: 1,
+    folder: 'propiedades-renta/bodega-av-cuauhtemoc',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
+},
+    'bodega-san-lorenzo': {
+        id: 'bodega-san-lorenzo',
+        tipo: 'renta',
+        categoria: 'Bodega',
+        titulo: 'Bodega San Lorenzo',
+        ubicacion: 'San Lorenzo, Tehuacán, Puebla',
+        precio: 23000,
+        precioTexto: '$23,000/mes',
+        coordenadas: { 
+            lat: 18.456389, 
+            lng: -97.400556 
+        },
+        descripcion: ` 🏭 Excelente bodega industrial en renta en la zona de San Lorenzo, una de las áreas con mayor crecimiento comercial e industrial de Tehuacán.
+
+        📍 Ubicación estratégica con amplios accesos para maniobras de carga y descarga, perfecta para actividades logísticas y de producción
+        🚛 Espacio versátil que se adapta a las necesidades de tu negocio, ya sea almacenamiento, taller mecánico, producción o distribución.
+        ⚡ Cuenta con instalación eléctrica trifásica, ideal para operaciones que requieren maquinaria pesada y alto consumo energético.`,
+
+      
+        caracteristicas: [
+            { icon: 'fa-ruler-combined', label: 'Superficie', value: '400 m²' },
+            { icon: 'fa-bolt', label: 'Tipo de luz', value: 'Trifásica' },
+            { icon: 'fa-warehouse', label: 'Uso', value: 'Industrial/Logístico' },
+            { icon: 'fa-truck', label: 'Maniobras', value: 'Amplio espacio' }
+        ],
+        amenidades: [],
+        fotos: 3,
+        folder: 'bodega-san-lorenzo400/bodega-san-lorenzo',
+        zip: `${SUPABASE_URL} /storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
+    },
+    'oficina-2-norte': {
+    id: 'oficina-2-norte',
+    tipo: 'renta',
+    categoria: 'Oficina',
+    titulo: 'Oficinas/Consultorios Col. Zaragoza',
+    ubicacion: 'Privada de 2 Norte #233, Colonia Zaragoza, Tehuacán, Puebla',
+    precio: 5000,
+    precioTexto: '$5,000/mes',
+    
+    
+    coordenadas: { 
+        lat: 18.463056,   
+        lng: -97.391667    
+    },
+    
+    // 📝 DESCRIPCIÓN: Solo texto narrativo (sin datos repetidos)
+    descripcion: `💼 Espacios diseñados especialmente para atención profesional, con distribución funcional que permite recibir pacientes y clientes con comodidad y privacidad.
+📍 Ubicación estratégica a solo una cuadra del Centro Escolar, con fácil acceso y alta visibilidad para tu consulta u oficina.
+👨‍⚕️ Perfecto para especialistas médicos, arquitectos, contadores, constructoras, psicólogos, fisioterapeutas y cualquier profesional que busque un espacio de trabajo de primer nivel.
+
+✨ Servicios incluidos:
+• Recepcionista profesional en áreas comunes
+• Ambiente profesional y seguro
+• Excelente ubicación cerca de escuelas y comercios`,
+    
+    // 📊 CARACTERÍSTICAS: Solo datos medibles
+    caracteristicas: [
+        { icon: 'fa-building', label: 'Tipo', value: 'Consultorio Oficina' },
+        { icon: 'fa-user-md', label: 'Ideal para', value: 'Profesionales' },
+        { icon: 'fa-door-open', label: 'Acceso', value: 'Privado' },
+        { icon: 'fa-clock', label: 'Horario', value: 'Flexible' }
+    ],
+    
+    // ✨ AMENIDADES: Servicios y comodidades
+    amenidades: [
+        'Agua incluida',
+        'Luz incluida',
+        'Internet incluido',
+        'Recepcionista',
+        'Áreas comunes',
+        'Cerca de escuelas',
+        'Zona transitada'
+    ],
+    
+    fotos: 1,
+    folder: 'propiedades-renta/consultorios-2-norte',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/consultorios-2-norte/fotos-consultorios-2-norte.zip`
+},
+'departamento-privada-1-poniente': {
+    id: 'departamento-privada-1-poniente',
+    tipo: 'renta',
+    categoria: 'Departamento',
+    titulo: 'Departamento Privada de la 1 Poniente',
+    ubicacion: 'Privada de la 1 Poniente, Tehuacán, Puebla',
+    precio: 8500,
+    precioTexto: '$8,500/mes',
+    
+    coordenadas: { 
+        lat: 18.462722,    
+        lng: -97.398750    
+    },
+    
+    descripcion: `🏢 Excelente departamento en renta en la exclusiva Privada de la 1 Poniente, una de las zonas más cotizadas de Tehuacán.
+    
+    ✨ ¡Haz de este espacio tu próximo hogar! ✨
+    📍 Ubicación estratégica en pleno corazón de la ciudad, a solo dos calles del histórico Parque Juárez y a una calle de la terminal ADO, lo que te brinda acceso inmejorable a todos los servicios y transportes.
+    🏡 Zona privada y tranquila, ideal para disfrutar de la paz y seguridad que tu familia merece, sin sacrificar la cercanía a comercios, escuelas y centros de entretenimiento.
+    🌟 Un espacio pensado para tu comodidad y bienestar, donde cada detalle ha sido cuidado para ofrecerte la mejor experiencia de vida urbana.`,
+    
+    caracteristicas: [
+        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+        { icon: 'fa-bath', label: 'Baños', value: '2 completos' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '1' },
+        { icon: 'fa-building', label: 'Planta', value: 'Alta' }
+    ],
+    
+    amenidades: [
+        'Zona privada',
+        'Tranquilidad',
+        'Céntrico',
+    
+    ],
+    
+    fotos: 9,
+    folder: 'propiedades-renta/departamento-privada-1-poniente',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
+},
+'espacio-comercial-centro': {
+    id: 'espacio-comercial-centro',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Espacio Comercial con Terraza Col. Centro',
+    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+    precio: 15000,
+    precioTexto: '$15,000/mes (+ IVA si requiere factura)',
+  
+    coordenadas: { 
+        lat: 18.462083,    
+        lng: -97.395722    
+    },
+    
+    
+    descripcion: `✨ Descubre el lugar perfecto para tu próximo proyecto en el corazón de Tehuacán.
+
+🏨 Este espacio comercial se encuentra dentro del exclusivo Hotel Boutique Tehuacán, en una de las esquinas más transitadas de la ciudad, garantizando visibilidad y constante afluencia de clientes potenciales.
+🍷 Su diseño interior ofrece un ambiente cálido y versátil, ideal para crear un bar con encanto, un lounge exclusivo o un proyecto gastronómico que destaque por su personalidad.
+🌅 La terraza exterior techada es el complemento perfecto, brindando un espacio al aire libre con gran potencial para atraer a los amantes de los buenos momentos.
+💡 Además, el local cuenta con todos los servicios necesarios para que tu negocio opere sin limitaciones desde el primer día.
+
+🎯 ¡Una oportunidad única para emprender en una ubicación privilegiada!`,
+        
+    // 📊 CARACTERÍSTICAS: Solo datos medibles
+    caracteristicas:[
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '65 m²' },
+        { icon: 'fa-building', label: 'Ubicado en', value: 'Hotel Boutique' },
+        { icon: 'fa-wine-glass', label: 'Ideal para', value: 'Bar/ Restaurante' },
+        { icon: 'fa-map-pin', label: 'Zona', value: 'Col. Centro' }
+    ],
+    
+    // ✨ AMENIDADES: Servicios y comodidades
+    amenidades: [
+        'Terraza exterior',
+        'Licencia de licores incluida',
+        'Medidor de luz independiente',
+        'Céntrico',
+        'Zona transitada'
+    ],
+    
+    fotos: 7,
+    folder: 'propiedades-renta/terraza-royal-place',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/fotos-terraza-royal-place.zip`
+},
+    'local-oficina-centro': {
+    id: 'local-oficina-centro',
+    tipo: 'renta',
+    categoria: 'Oficina',
+    titulo: 'Local para Oficina Col. Centro',
+    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+    precio: 7500,
+    precioTexto: '$7,500/mes',
+    coordenadas: { 
+        lat: 18.462083, 
+        lng: -97.395722 
+    },
+    descripcion: `📍 Este local en planta baja, ubicado sobre la transitada 1 Poniente, te ofrece la visibilidad y accesibilidad que tu negocio necesita para recibir clientes con total comodidad.
+🌡️ Disfruta de un espacio perfectamente climatizado que te permitirá trabajar en un ambiente agradable sin importar la temporada del año.
+💼 Su distribución funcional y ubicación estratégica lo convierten en el lugar ideal para profesionales que valoran la practicidad y la buena ubicación.
+🌟 Aprovecha los servicios básicos ya cubiertos y enfócate en lo que realmente importa: hacer crecer tu proyecto profesional.
+
+🚀 ¡Un espacio listo para que llegues y empieces a trabajar!`,
+
+    caracteristicas: [
+    { icon: 'fa-building', label: 'Tipo', value: 'Local/Oficina' },
+    { icon: 'fa-map-pin', label: 'Zona', value: 'Col. Centro' },
+    ],
+
+    amenidades: [
+    'Agua incluida',
+    'Internet incluido',
+    'Clima incluido',
+    'Fácil acceso',
+    'Céntrico',
+    'Zona transitada'
+    ],
+    fotos: 2,
+    folder: '/propiedades-renta/oficina-royal-place/',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+},
+'bodega-santa-cruz-buenavista': {
+    id: 'bodega-santa-cruz-buenavista',
+    tipo: 'renta',
+    categoria: 'Bodega',
+    titulo: 'Bodega Comercial Santa Cruz Buenavista',
+    ubicacion: 'Calzada Zavaleta, Santa Cruz Buenavista, Puebla',
+    precio: 670000,
+    precioTexto: '$670,000/mes',
+    
+    // 📍 COORDENADAS (aproximadas - Santa Cruz Buenavista, Puebla)
+    coordenadas: { 
+        lat: 19.028333,    
+        lng: -98.205278    
+    },
+    
+    // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
+    descripcion: `🏭 Impresionante bodega comercial en renta en la exclusiva Calzada Zavaleta, uno de los corredores industriales y logísticos más importantes de Puebla.
+
+📐 Con una superficie operativa de 2,750 m² y posibilidad de expansión a 3,000 m², este inmueble está diseñado para albergar operaciones de gran escala.
+🏗️ Su estructura de 3 plantas con alturas de 6 a 7 metros ofrece versatilidad para almacenamiento, distribución y áreas operativas, todo iluminado con tecnología 100% LED para máxima eficiencia energética.
+🛗 Cuenta con un elevador Mitsubishi para 8 personas con mantenimiento incluido, además de espacio estructural disponible para un segundo elevador, brindando una excelente movilidad vertical.
+💧 La propiedad está equipada con 2 pozos de agua y servicio de agua potable, garantizando el suministro para todo tipo de operaciones.
+⚡ Transformador de 75 kVA que asegura la capacidad energética necesaria para maquinaria y equipos industriales.
+🏢 La oficina privada premium incluye puerta de seguridad, baño independiente y una espectacular terraza privada de 100 m², ideal para reuniones ejecutivas o áreas de descanso.
+🚚 Con estacionamiento para 12 vehículos y la posibilidad de expandir a 40+ espacios con el lote aledaño, más servicio de valet parking fijo cubierto por el propietario, la logística de tu personal y visitas está completamente resuelta.
+
+🎯 El espacio perfecto para corporativos, grandes centros de distribución o centros operativos que buscan eficiencia y crecimiento.`,
+    
+    // 📊 CARACTERÍSTICAS: Datos medibles (se pueden contar)
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '2,750 m²' },
+        { icon: 'fa-layer-group', label: 'Plantas', value: '3' },
+        { icon: 'fa-arrows-alt-v', label: 'Altura', value: '6-7 m' },
+        { icon: 'fa-arrows-alt-h', label: 'Frente x Fondo', value: '17m x 79m' },
+        { icon: 'fa-toilet', label: 'Baños', value: '5' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '12' },
+        { icon: 'fa-elevator', label: 'Elevador', value: 'Mitsubishi 8 pers.' },
+        { icon: 'fa-bolt', label: 'Transformador', value: '75 kVA' }
+        
+    ],
+    
+    // ✨ AMENIDADES: Servicios extras
+    amenidades: [
+        'Pozos de agua',
+        'Agua potable',
+        'Elevador',
+        'Oficina premium',
+        'Terraza privada',
+        'Bodegas de servicio'
+    ],
+    
+    fotos: 13,
+    folder: 'propiedades-renta/bodega-santa-cruz-buenavista',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz.zip`
+},
+'casa-la-arcadia': {
+    id: 'casa-la-arcadia',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa en La Arcadia',
+    ubicacion: 'Calle San Sebastián, La Arcadia, Tehuacán, Puebla',
+    precio: 12000,
+    precioTexto: '$12,000/mes',
+    
+    // 📍 COORDENADAS (aproximadas - La Arcadia, Tehuacán)
+    coordenadas: { 
+        lat: 18.460944,    
+        lng: -97.408972   
+    },
+    
+    // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
+    descripcion: `🏠 Excelente casa en renta en la tranquila y exclusiva zona de La Arcadia, un lugar ideal para disfrutar de la paz y privacidad que tu familia merece.
+
+✨ ¡Haz de este espacio tu próximo hogar! ✨
+🏡 Con una distribución funcional y amplios espacios, este hogar está diseñado para brindar calidez y bienestar a toda la familia.
+🌟 Ubicación estratégica que te permitirá disfrutar de la tranquilidad de La Arcadia sin sacrificar la cercanía a servicios, comercios y vías de acceso.
+
+💫 ¡Una oportunidad única para vivir en uno de los fraccionamientos más cotizados de Tehuacán!`,
+    
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '200 m²' },
+        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+        { icon: 'fa-bath', label: 'Baños', value: '2' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '3' }
+    ],
+    
+    amenidades: [
+        
+        'Puerta calle',
+        'Excelente ubicación',
+        'Tranquilidad'
+    ],
+    
+    fotos: 9,
+    folder: 'propiedades-renta/Arcadea',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/arcade.zip`
+}
+
 };
 
 let currentProperty = null;
@@ -293,7 +591,35 @@ function renderAmenities(amenidades) {
         'Portero': 'fa-user-shield',
         'Seguridad 24 horas': 'fa-shield-alt',
         'Facilidad para estacionarse': 'fa-parking',
-        'Área de juegos infantiles': 'fa-child'
+        'Área de juegos infantiles': 'fa-child',
+        'Agua incluida': 'fa-tint',
+        'Luz incluida': 'fa-bolt',
+        'Internet incluido': 'fa-wifi',
+        'Recepcionista': 'fa-user-tie',
+        'Áreas comunes': 'fa-people-arrows',
+        'Cerca de escuelas': 'fa-school',
+        'Zona transitada': 'fa-route',
+        'Zona privada': 'fa-lock',
+        'Tranquilidad': 'fa-spa',
+        'Céntrico': 'fa-map-pin',
+        'Oficinas integradas': 'fa-building',
+        'Zona industrial': 'fa-industry',
+        'Patio de maniobras': 'fa-rotate',
+        'Precio negociable': 'fa-handshake',
+        'Estacionamiento': 'fa-parking',
+        'Fácil acceso': 'fa-door-open',
+        'Terraza exterior': 'fa-umbrella-beach',
+        'Licencia de licores incluida': 'fa-wine-bottle',
+        'Medidor de luz independiente': 'fa-bolt',
+        'Clima incluido': 'fa-snowflake',
+        'Pozos de agua': 'fa-water',
+        'Agua potable': 'fa-tint',       
+        'Elevador': 'fa-elevator',
+        'Oficina premium': 'fa-briefcase', 
+        'Terraza privada': 'fa-sun',       
+        'Bodegas de servicio': 'fa-warehouse',
+        'Puerta calle': 'fa-door-open',
+        'Excelente ubicación': 'fa-map-pin'
     };
     
     container.innerHTML = amenidades.map(a => `

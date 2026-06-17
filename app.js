@@ -139,7 +139,7 @@ const propiedades = [
     fotos: 10, // 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },{
-    id: 'espacio-comercial-centro',
+id: 'espacio-comercial-centro',
     tipo: 'renta',
     categoria: 'Local Comercial',
     titulo: 'Espacio Comercial con Terraza Centro',
@@ -180,6 +180,20 @@ const propiedades = [
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/1.webp`,
     fotos: 13, 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz-buenavista.zip`
+},{
+    id: 'casa-la-arcadia',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa La Arcadia',
+    ubicacion: 'Calle San Sebastián, La Arcadia, Tehuacán, Puebla',
+    precio: 12000,
+    precioTexto: '$12,000/mes',
+    metros: 200, 
+    habitaciones: 3,
+    banos: 2,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/1598389365.webp`,
+    fotos: 9, 
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/arcade.zip`
 }
 ];
 // Función para crear tarjeta de propiedad
