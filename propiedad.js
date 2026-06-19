@@ -192,7 +192,7 @@ Tehuacán, Puebla
     ],
     amenidades: [],
     fotos: 1,
-    folder: 'propiedades-renta/bodega-av-cuauhtemoc',
+    folder: 'propiedades-renta/bodega-av-cuauctemoc',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
 },
     'bodega-san-lorenzo': {
@@ -309,7 +309,7 @@ Tehuacán, Puebla
     ],
     
     fotos: 9,
-    folder: 'propiedades-renta/departamento-privada-1-poniente',
+    folder: 'propiedades-renta/departamento-privada-1poniente',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },
     'local-oficina-centro': {

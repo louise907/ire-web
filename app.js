@@ -135,8 +135,8 @@ const propiedades = [
     metros: 0, 
     habitaciones: 3,
     banos: 2,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/photo_4972208000370150671_y.webp`,
-    fotos: 10, // 
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/1.webp`,
+    fotos: 10, 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },{
     id: 'local-oficina-centro',
