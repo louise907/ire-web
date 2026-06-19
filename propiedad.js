@@ -222,8 +222,8 @@ Tehuacán, Puebla
         ],
         amenidades: [],
         fotos: 3,
-        folder: 'bodega-san-lorenzo400/bodega-san-lorenzo',
-        zip: `${SUPABASE_URL} /storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
+        folder: 'propiedades-renta/bodega-san-lorenzo400',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
     },
     'oficina-2-norte': {
     id: 'oficina-2-norte',
@@ -312,59 +312,14 @@ Tehuacán, Puebla
     folder: 'propiedades-renta/departamento-privada-1-poniente',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },
-'espacio-comercial-centro': {
-    id: 'espacio-comercial-centro',
-    tipo: 'renta',
-    categoria: 'Local Comercial',
-    titulo: 'Espacio Comercial con Terraza Col. Centro',
-    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-    precio: 15000,
-    precioTexto: '$15,000/mes (+ IVA si requiere factura)',
-  
-    coordenadas: { 
-        lat: 18.462083,    
-        lng: -97.395722    
-    },
-    
-    
-    descripcion: `✨ Descubre el lugar perfecto para tu próximo proyecto en el corazón de Tehuacán.
-
-🏨 Este espacio comercial se encuentra dentro del exclusivo Hotel Boutique Tehuacán, en una de las esquinas más transitadas de la ciudad, garantizando visibilidad y constante afluencia de clientes potenciales.
-🍷 Su diseño interior ofrece un ambiente cálido y versátil, ideal para crear un bar con encanto, un lounge exclusivo o un proyecto gastronómico que destaque por su personalidad.
-🌅 La terraza exterior techada es el complemento perfecto, brindando un espacio al aire libre con gran potencial para atraer a los amantes de los buenos momentos.
-💡 Además, el local cuenta con todos los servicios necesarios para que tu negocio opere sin limitaciones desde el primer día.
-
-🎯 ¡Una oportunidad única para emprender en una ubicación privilegiada!`,
-        
-    // 📊 CARACTERÍSTICAS: Solo datos medibles
-    caracteristicas:[
-        { icon: 'fa-ruler-combined', label: 'Superficie', value: '65 m²' },
-        { icon: 'fa-building', label: 'Ubicado en', value: 'Hotel Boutique' },
-        { icon: 'fa-wine-glass', label: 'Ideal para', value: 'Bar/ Restaurante' },
-        { icon: 'fa-map-pin', label: 'Zona', value: 'Col. Centro' }
-    ],
-    
-    // ✨ AMENIDADES: Servicios y comodidades
-    amenidades: [
-        'Terraza exterior',
-        'Licencia de licores incluida',
-        'Medidor de luz independiente',
-        'Céntrico',
-        'Zona transitada'
-    ],
-    
-    fotos: 7,
-    folder: 'propiedades-renta/terraza-royal-place',
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/fotos-terraza-royal-place.zip`
-},
     'local-oficina-centro': {
     id: 'local-oficina-centro',
     tipo: 'renta',
     categoria: 'Oficina',
     titulo: 'Local para Oficina Col. Centro',
     ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-    precio: 7500,
-    precioTexto: '$7,500/mes',
+    precio: 8000,
+    precioTexto: '$8,000/mes',
     coordenadas: { 
         lat: 18.462083, 
         lng: -97.395722 
@@ -447,48 +402,6 @@ Tehuacán, Puebla
     fotos: 13,
     folder: 'propiedades-renta/bodega-santa-cruz-buenavista',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz.zip`
-},
-'casa-la-arcadia': {
-    id: 'casa-la-arcadia',
-    tipo: 'renta',
-    categoria: 'Casa',
-    titulo: 'Casa en La Arcadia',
-    ubicacion: 'Calle San Sebastián, La Arcadia, Tehuacán, Puebla',
-    precio: 12000,
-    precioTexto: '$12,000/mes',
-    
-    // 📍 COORDENADAS (aproximadas - La Arcadia, Tehuacán)
-    coordenadas: { 
-        lat: 18.460944,    
-        lng: -97.408972   
-    },
-    
-    // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
-    descripcion: `🏠 Excelente casa en renta en la tranquila y exclusiva zona de La Arcadia, un lugar ideal para disfrutar de la paz y privacidad que tu familia merece.
-
-✨ ¡Haz de este espacio tu próximo hogar! ✨
-🏡 Con una distribución funcional y amplios espacios, este hogar está diseñado para brindar calidez y bienestar a toda la familia.
-🌟 Ubicación estratégica que te permitirá disfrutar de la tranquilidad de La Arcadia sin sacrificar la cercanía a servicios, comercios y vías de acceso.
-
-💫 ¡Una oportunidad única para vivir en uno de los fraccionamientos más cotizados de Tehuacán!`,
-    
-    caracteristicas: [
-        { icon: 'fa-ruler-combined', label: 'Superficie', value: '200 m²' },
-        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
-        { icon: 'fa-bath', label: 'Baños', value: '2' },
-        { icon: 'fa-car', label: 'Estacionamiento', value: '3' }
-    ],
-    
-    amenidades: [
-        
-        'Puerta calle',
-        'Excelente ubicación',
-        'Tranquilidad'
-    ],
-    
-    fotos: 9,
-    folder: 'propiedades-renta/Arcadea',
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/arcade.zip`
 }
 
 };

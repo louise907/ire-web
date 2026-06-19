@@ -139,27 +139,13 @@ const propiedades = [
     fotos: 10, // 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },{
-id: 'espacio-comercial-centro',
-    tipo: 'renta',
-    categoria: 'Local Comercial',
-    titulo: 'Espacio Comercial con Terraza Centro',
-    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-    precio: 15000,
-    precioTexto: '$15,000/mes',
-    metros: 65,
-    habitaciones: null,
-    banos: null,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/1.webp`,
-    fotos: 7, 
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/terraza-royal-place/fotos-terraza-royal-place.zip`
-},{
     id: 'local-oficina-centro',
     tipo: 'renta',
     categoria: 'Local Comercial',
     titulo: 'Local para Oficina Centro',
     ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-    precio: 7500,
-    precioTexto: '$7,500/mes',
+    precio: 8000,
+    precioTexto: '$8,000/mes',
     metros: 0, 
     habitaciones: null,
     banos: null,
@@ -180,20 +166,6 @@ id: 'espacio-comercial-centro',
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/1.webp`,
     fotos: 13, 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz-buenavista.zip`
-},{
-    id: 'casa-la-arcadia',
-    tipo: 'renta',
-    categoria: 'Casa',
-    titulo: 'Casa La Arcadia',
-    ubicacion: 'Calle San Sebastián, La Arcadia, Tehuacán, Puebla',
-    precio: 12000,
-    precioTexto: '$12,000/mes',
-    metros: 200, 
-    habitaciones: 3,
-    banos: 2,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/1598389365.webp`,
-    fotos: 9, 
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/Arcadea/arcade.zip`
 }
 ];
 // Función para crear tarjeta de propiedad
