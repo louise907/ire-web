@@ -309,7 +309,7 @@ Tehuacán, Puebla
     ],
     
     fotos: 9,
-    folder: 'propiedades-renta/departamento-privada-1poniente',
+    folder: 'propiedades-renta/departamento-priv-1poniente',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento-priv-1poniente/compressed.zip`
 },
     'local-oficina-centro': {
