@@ -152,8 +152,37 @@ const propiedades = [
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/1.webp`,
     fotos: 13, 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz-buenavista.zip`
+},{
+    id: 'local-aquiles-serdan',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Local Comercial Aquiles Serdán',
+    ubicacion: 'Calle 16 norte, Aquiles Serdán, Puebla',
+    precio: 5000,
+    precioTexto: '$5,000/mes',
+    metros: 60,
+    habitaciones: null,
+    banos: 1,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local-16%20norte/1.webp`,
+    fotos: 4, 
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local-16%20norte/local_16.zip`
+},{
+    id: 'terreno-antigua-magdalena',
+    tipo: 'venta',
+    categoria: 'Terreno',
+    titulo: 'Terreno Antigua Magdalena',
+    ubicacion: 'Antigua Magdalena,San Lorenzo Teotipilco,Tehuacan, Puebla',
+    precio: 2950000,
+    precioTexto: '$2,950,000',
+    metros: 522,
+    habitaciones: null,
+    banos: null,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/1.webp`,
+    fotos: 3,
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
 }
 ];
+
 // Función para crear tarjeta de propiedad
 function crearTarjetaPropiedad(prop) {
     const features = [];

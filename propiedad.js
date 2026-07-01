@@ -366,8 +366,85 @@ Tehuacán, Puebla
     fotos: 13,
     folder: 'propiedades-renta/bodega-santa-cruz-buenavista',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz.zip`
-}
+},
+'local-aquiles-serdan': {
+    id: 'local-aquiles-serdan',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Local Comercial Aquiles Serdán',
+    ubicacion: 'Calle 16 Norte, Aquiles Serdán, Tehuacán, Puebla',
+    precio: 5000,
+    precioTexto: '$5,000/mes',
+    coordenadas: { 
+        lat: 18.464806,    // 18°27'53.3"N
+        lng: -97.406194    // 97°24'22.3"W
+    },
+    
+    descripcion: `🏪 Excelente local comercial en renta en la transitada Calle 16 Norte, en la zona de Aquiles Serdán, una de las áreas con mayor actividad comercial de Tehuacán.
 
+📐 Este espacio ha sido diseñado para ofrecer la máxima funcionalidad a tu negocio. Su distribución inteligente divide el local en dos áreas perfectamente definidas: un frente de 30 m² ideal para la exhibición de productos o atención directa al cliente, y una zona trasera de 30 m² que se adapta a la perfección como oficina administrativa, área de almacenamiento o bodega.
+
+📍 La ubicación sobre la Calle 16 Norte garantiza una excelente visibilidad y un flujo constante de clientes potenciales, convirtiendo este local en la opción perfecta para emprendedores y negocios que buscan consolidarse en una zona comercial estratégica.
+
+💼 Su distribución funcional y su accesibilidad lo hacen ideal para una amplia variedad de giros comerciales.`,
+    
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '60 m²' },
+        { icon: 'fa-toilet', label: 'Baños', value: '1 medio' },
+        { icon: 'fa-store', label: 'Distribución', value: '30 m² frente + 30 m² traseros' },
+        { icon: 'fa-door-open', label: 'Acceso', value: 'Calle principal' }
+    ],
+    
+    amenidades: [
+        'Excelente ubicación',
+        'Fácil acceso',
+        'Distribución funcional',
+        'Área de oficina integrada'
+    ],
+    
+    fotos: 4,
+    folder: 'propiedades-renta/local-16%20norte',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local-16%20norte/local_16.zip`
+}, 
+'terreno-antigua-magdalena': {
+    id: 'terreno-antigua-magdalena',
+    tipo: 'venta',
+    categoria: 'Terreno',
+    titulo: 'Terreno Antigua Magdalena',
+    ubicacion: 'Antigua Magdalena, San Lorenzo Teotipilco, Tehuacán, Puebla',
+    precio: 2950000,
+    precioTexto: '$2,950,000',
+    coordenadas: { 
+        lat: 18.480389,    // 18°28'49.4"N
+        lng: -97.416417    // 97°24'59.1"W
+    },
+    
+    descripcion: `🌳 Excelente oportunidad de inversión en la Antigua Magdalena, San Lorenzo Teotipilco, una de las zonas con mayor proyección de crecimiento y plusvalía en Tehuacán.
+
+📐 Este terreno de 522 m² presenta una característica única que lo hace excepcionalmente versátil: está conformado por dos predios con escrituras independientes (316 m² y 206 m²), lo que te brinda la flexibilidad de desarrollar un proyecto unificado que aproveche todo el espacio disponible, o mantener dos propiedades separadas con sus propias escrituras.
+
+📍 La ubicación en la Antigua Magdalena garantiza un entorno residencial tranquilo pero con excelente conectividad a las vías principales de Tehuacán, lo que lo convierte en una opción ideal tanto para inversionistas que buscan un proyecto de desarrollo inmobiliario como para familias que desean construir su hogar soñado en un espacio amplio y bien ubicado.
+
+📈 Su potencial de plusvalía y su versatilidad hacen de este terreno una inversión inteligente en el mercado inmobiliario de Tehuacán.`,
+    
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie total', value: '522 m²' },
+        { icon: 'fa-layer-group', label: 'Predio 1', value: '316 m²' },
+        { icon: 'fa-layer-group', label: 'Predio 2', value: '206 m²' },
+        { icon: 'fa-file-signature', label: 'Escrituras', value: 'Independientes' }
+    ],
+    
+    amenidades: [
+        'Excelente ubicación',
+        'Potencial de desarrollo',
+        'Plusvalía garantizada',
+        'Dos predios en uno'
+    ],
+    
+    fotos: 3,
+    folder: 'propiedades-venta/terreno-san-lorenzo',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
+}
 };
 
 let currentProperty = null;
@@ -496,7 +573,12 @@ function renderAmenities(amenidades) {
         'Terraza privada': 'fa-sun',       
         'Bodegas de servicio': 'fa-warehouse',
         'Puerta calle': 'fa-door-open',
-        'Excelente ubicación': 'fa-map-pin'
+        'Excelente ubicación': 'fa-map-pin',
+        'Distribución funcional': 'fa-layer-group',
+        'Área de oficina integrada': 'fa-briefcase',
+        'Plusvalía garantizada': 'fa-chart-line',
+        'Dos predios en uno': 'fa-object-group'
+
     };
     
     container.innerHTML = amenidades.map(a => `
