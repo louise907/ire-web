@@ -194,6 +194,48 @@ const propiedades = [
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/1.webp`,
     fotos: 22,  
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
+},{
+    id: 'local-centro-betanzo',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Local Centro Betanzo',
+    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
+    precio: 2500,
+    precioTexto: '$2,500/mes (Luz y agua incluidos)',
+    metros: 20,
+    habitaciones: null,
+    banos: 1,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/1.webp`,
+    fotos: 3,  
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/local_centro.zip`
+},{
+    id: 'casa-centro-betanzo',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa Centro Betanzo',
+    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
+    precio: 14000,
+    precioTexto: '$14,000/mes',
+    metros: 400,
+    habitaciones: 3,
+    banos: 2,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_centro/1.webp`,
+    fotos: 7, 
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_centro/casa_centro.zip`
+},{
+    id: 'casa-francisco-sarabia-renta',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa Francisco Sarabia',
+    ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
+    precio: 17000,
+    precioTexto: '$17,000/mes',
+    metros: null,  
+    habitaciones: 3,
+    banos: 2,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/1.webp`,
+    fotos: 14, 
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
 }
 ];
 

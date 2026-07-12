@@ -480,6 +480,158 @@ Tehuacán, Puebla
     fotos: 22,  
     folder: 'propiedades-renta/casa-arcadea',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
+},
+'local-centro-betanzo': {
+    id: 'local-centro-betanzo',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Local Centro Betanzo',
+    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
+    precio: 2500,
+    precioTexto: '$2,500/mes (Luz y agua incluidos)',
+    coordenadas: { 
+        lat: 18.462778,    // Aproximado - Centro de Tehuacán
+        lng: -97.392500    // Aproximado - Centro de Tehuacán
+    },
+    
+    descripcion: `🏢 Excelente local comercial en renta en el corazón del Centro de Tehuacán, una ubicación privilegiada que garantiza alta afluencia y visibilidad para tu negocio.
+
+📍 Ubicado en la Privada A. Betanzo Sancho con entrada por la transitada Calle 2 Oriente, este espacio te conecta con el vibrante ambiente comercial del centro histórico de la ciudad.
+
+📐 Su distribución práctica y funcional ha sido diseñada para que puedas iniciar operaciones de inmediato, sin necesidad de realizar grandes adecuaciones. Perfecto para emprendedores que buscan un espacio listo para arrancar.
+
+💡 Una de sus mayores ventajas es que los servicios básicos de luz y agua están incluidos en la renta, lo que te permite tener un control total de tus gastos operativos desde el primer día.
+
+🎯 Ideal para consultorios profesionales, oficinas comerciales, tiendas de especialidad o cualquier negocio que busque establecerse en una ubicación céntrica y accesible.
+
+✨ ¡Aprovecha esta oportunidad única para hacer crecer tu negocio en el corazón de Tehuacán!`,
+    
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '20 m²' },
+        { icon: 'fa-toilet', label: 'Baños', value: '1' },
+        { icon: 'fa-store', label: 'Tipo', value: 'Local Comercial' },
+        { icon: 'fa-door-open', label: 'Acceso', value: 'Por 2 Oriente' }
+    ],
+    
+    amenidades: [
+        'Agua incluida',
+        'Luz incluida',
+        'Céntrico',
+        'Excelente ubicación',
+        'Fácil acceso',
+        'Zona transitada'
+    ],
+    
+    fotos: 3, 
+    folder: 'propiedades-renta/local_centro',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/local_centro.zip`
+},
+'casa-centro-betanzo': {
+    id: 'casa-centro-betanzo',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa Centro Betanzo',
+    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
+    precio: 14000,
+    precioTexto: '$14,000/mes',
+    coordenadas: { 
+        lat: 18.462778,    // Aproximado - Centro de Tehuacán
+        lng: -97.392500    // Aproximado - Centro de Tehuacán
+    },
+    
+    descripcion: `🏠 Excelente casa en renta en el corazón del Centro de Tehuacán, una ubicación privilegiada que combina la tranquilidad de un hogar con la cercanía a todos los servicios y comercios de la ciudad.
+
+📍 Ubicada en la Privada A. Betanzo Sancho con entrada por la transitada Calle 2 Oriente, esta propiedad te ofrece lo mejor de la vida urbana sin sacrificar la comodidad y el espacio que tu familia merece.
+
+🛏️ Cuenta con 3 recámaras espaciosas y 2 baños completos, distribuidos en un diseño pensado para el bienestar de toda la familia. Cada ambiente ha sido creado para brindar calidez y funcionalidad en el día a día.
+
+🚗 Una de sus principales ventajas es el amplio patio con capacidad para más de 9 vehículos, ideal para familias con múltiples automóviles o para quienes disfrutan de recibir visitas con total comodidad.
+
+☀️ Equipada con calentador solar, esta casa no solo ofrece confort térmico, sino también un importante ahorro energético que se refleja en tus gastos mensuales.
+
+🐶 ¡Aceptan mascotas! El amplio espacio exterior permite que tus animales disfruten de su propio lugar al aire libre, convirtiendo esta propiedad en el hogar perfecto para toda la familia, incluidos los peludos.
+
+✨ Servicios básicos como agua y recolección de basura ya están cubiertos en tu renta mensual, brindándote tranquilidad y un control total de tus gastos.
+
+✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la ubicación y el espacio se unen para ofrecerte la mejor experiencia de vida en el Centro de Tehuacán.`,
+    
+    caracteristicas: [
+        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+        { icon: 'fa-bath', label: 'Baños', value: '2 completos' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '+9 vehículos' },
+        { icon: 'fa-ruler-combined', label: 'Terreno', value: '400 m²' },
+        { icon: 'fa-solar-panel', label: 'Calentador', value: 'Solar' }
+    ],
+    
+    amenidades: [
+        'Mascotas permitidas',
+        'Céntrico',
+        'Excelente ubicación',
+        'Fácil acceso',
+        'Zona transitada',
+        'Agua incluida',
+        'Patio amplio',
+        'Calentador solar'
+    ],
+    
+    fotos: 7,  
+    folder: 'propiedades-renta/casa_centro',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_centro/casa_centro.zip`
+},'casa-francisco-sarabia-renta': {
+    id: 'casa-francisco-sarabia-renta',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa Francisco Sarabia',
+    ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
+    precio: 17000,
+    precioTexto: '$17,000/mes',
+    coordenadas: { 
+        lat: 18.472278,    // Aproximado - Francisco Sarabia
+        lng: -97.393194    // Aproximado - Francisco Sarabia
+    },
+    
+    descripcion: `🏠 Excelente casa en renta en la tranquila y bien establecida Colonia Francisco Sarabia, una de las zonas residenciales más cotizadas de Tehuacán por su ubicación y accesibilidad.
+
+📍 Ubicada en Calle 6 Ote. esquina con 5 Nte., esta propiedad combina la tranquilidad de un entorno residencial con la cercanía a los principales accesos y servicios de la ciudad.
+
+🛏️ Cuenta con 3 recámaras espaciosas y 2 baños completos, distribuidos en un diseño funcional pensado para el bienestar y comodidad de toda la familia.
+
+🚗 Dispone de estacionamiento para 4 vehículos, brindando amplitud y seguridad para tu flotilla vehicular y la de tus visitas.
+
+☀️ Equipada con calentador solar y tanque estacionario, esta casa no solo ofrece confort térmico, sino también un importante ahorro energético y autonomía en el suministro de gas.
+
+🍳 La cocina integral ha sido diseñada para facilitar la preparación de alimentos, ofreciendo un espacio práctico y funcional para el día a día.
+
+🔐 La seguridad es una prioridad: cuenta con portón eléctrico e interphone, brindándote tranquilidad y control total sobre el acceso a tu hogar.
+
+🐶 ¡Se aceptan mascotas! El amplio espacio exterior permite que tus animales disfruten de su propio lugar al aire libre, convirtiendo esta propiedad en el hogar perfecto para toda la familia, incluidos los peludos.
+
+✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la seguridad y el espacio se unen para ofrecerte la mejor experiencia de vida en Francisco Sarabia.`,
+    
+    caracteristicas: [
+        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+        { icon: 'fa-bath', label: 'Baños', value: '2 completos' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '4' },
+        { icon: 'fa-solar-panel', label: 'Calentador', value: 'Solar' },
+        { icon: 'fa-gas-pump', label: 'Tanque', value: 'Estacionario' },
+        { icon: 'fa-utensils', label: 'Cocina', value: 'Integral' }
+    ],
+    
+    amenidades: [
+        'Mascotas permitidas',
+        'Excelente ubicación',
+        'Fácil acceso',
+        'Zona residencial',
+        'Cocina equipada',
+        'Calentador solar',
+        'Portón eléctrico',
+        'Interphone',
+        'Seguridad 24 horas'
+    ],
+    
+    fotos: 14, 
+    folder: 'propiedades-renta/casa_sarabia',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
 }
 };
 
@@ -613,7 +765,12 @@ function renderAmenities(amenidades) {
         'Distribución funcional': 'fa-layer-group',
         'Área de oficina integrada': 'fa-briefcase',
         'Plusvalía garantizada': 'fa-chart-line',
-        'Dos predios en uno': 'fa-object-group'
+        'Dos predios en uno': 'fa-object-group',    
+        'Patio amplio': 'fa-tree',
+        'Calentador solar': 'fa-solar-panel',
+        'Calentador solar': 'fa-solar-panel',
+        'Portón eléctrico': 'fa-gate',
+        'Interphone': 'fa-phone'
 
     };
     
