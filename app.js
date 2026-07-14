@@ -7,6 +7,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 // Datos de propiedades (estructura base)
 const propiedades = [
         {
+        id: 'oficina-1-poniente',
+        tipo: 'renta',
+        categoria: 'Oficina',
+        titulo: 'Oficina 1 Poniente',
+        ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+        precio: 7500,
+        precioTexto: '$7,500/mes',
+        metros: 0,  // Actualizar cuando tengas los metros
+        habitaciones: null,
+        banos: null,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
+        fotos: 2,  
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+    },{
         id: 'casa-francisco-sarabia-renta',
         tipo: 'renta',
         categoria: 'Casa',
@@ -20,48 +34,6 @@ const propiedades = [
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/1.webp`,
         fotos: 14,  // Actualizar cuando tengas las fotos
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
-    },{
-        id: 'plaza-montecarlo-segundo-nivel',
-        tipo: 'renta',
-        categoria: 'Oficina',
-        titulo: 'Planta Comercial Plaza Monte Carlo',
-        ubicacion: 'C. 1 Nte, entre calle Camelia y 8 Oriente, Francisco Sarabia, Tehuacán, Puebla',
-        precio: 75000,
-        precioTexto: '$75,000/mes',
-        metros: null,  
-        habitaciones: 17,  // 17 locales
-        banos: 2,  // Hombres y Mujeres
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/plaza_monte_carlo/1.webp`,
-        fotos: 5, 
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/plaza_monte_carlo/plaza_monte_carlo.zip`
-    },{
-        id: 'bodega-independencia-poniente',
-        tipo: 'renta',
-        categoria: 'Bodega',
-        titulo: 'Bodega Independencia Poniente',
-        ubicacion: 'Independencia Poniente #218, Tehuacán, Puebla',
-        precio: 150000,
-        precioTexto: '$150,000/mes',
-        metros: 778,
-        habitaciones: null,
-        banos: null,
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_independencia/1.webp`,
-        fotos: 15,  
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_independencia/bodega_independencia.zip`
-    },{
-        id: 'bodega-3norte-camelia',
-        tipo: 'renta',
-        categoria: 'Bodega',
-        titulo: 'Bodega 3 Norte y Camelia',
-        ubicacion: 'Esquina de 3 Norte y Camelia Oriente, Tehuacán, Puebla',
-        precio: 60000,
-        precioTexto: '$60,000/mes + IVA',
-        metros: 1000,
-        habitaciones: null,
-        banos: null,
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_3_norte/1.webp`,
-        fotos: 3, 
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_3_norte/bodega_3_norte.zip`
     },{
         id: 'terreno-parque-industrial2',
         tipo: 'venta',

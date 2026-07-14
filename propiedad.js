@@ -4,6 +4,54 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+    'oficina-1-poniente': {
+    id: 'oficina-1-poniente',
+    tipo: 'renta',
+    categoria: 'Oficina',
+    titulo: 'Oficina 1 Poniente',
+    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+    precio: 7500,
+    precioTexto: '$7,500/mes',
+    coordenadas: { 
+        lat: 18.461667,    // Aproximado - Centro de Tehuacán
+        lng: -97.395278    // Aproximado - Centro de Tehuacán
+    },
+    
+    descripcion: `🏢 Excelente local para oficina en renta en el corazón del Centro de Tehuacán, una ubicación privilegiada que combina prestigio, accesibilidad y funcionalidad para tu negocio.
+
+    📍 Ubicado en 1 Poniente No. 135, en planta baja, este espacio ha sido diseñado para facilitar el acceso de tus clientes y colaboradores, eliminando barreras y ofreciendo comodidad desde el primer momento.
+
+    ❄️ Equipado con clima, podrás trabajar con la mayor comodidad durante todo el año, manteniendo un ambiente agradable y profesional para tus reuniones y actividades diarias.
+
+    💡 Una de sus principales ventajas es el excelente ahorro operativo: el servicio de agua y la conexión Wi-Fi ya están cubiertos por el arrendador, por lo que solo pagas tu recibo de luz, simplificando tus gastos mensuales y permitiéndote enfocarte en lo que realmente importa: hacer crecer tu negocio.
+
+    🎯 Ideal para despachos corporativos, consultorios o profesionales independientes que buscan una ubicación céntrica con todos los servicios necesarios para operar con eficiencia y profesionalismo.
+
+    ✨ ¡Establece tu oficina en el corazón de Tehuacán y brinda a tus clientes la experiencia que merecen!`,
+        
+        caracteristicas: [
+            { icon: 'fa-building', label: 'Tipo', value: 'Oficina Local' },
+            { icon: 'fa-door-open', label: 'Acceso', value: 'Planta baja' },
+            { icon: 'fa-snowflake', label: 'Clima', value: 'Incluido' },
+            { icon: 'fa-wifi', label: 'Wi-Fi', value: 'Incluido' },
+            { icon: 'fa-tint', label: 'Agua', value: 'Incluida' }
+        ],
+        
+        amenidades: [
+            'Excelente ubicación',
+            'Céntrico',
+            'Fácil acceso',
+            'Clima incluido',
+            'Agua incluida',
+            'Internet incluido',
+            'Zona transitada',
+            'Planta baja'
+        ],
+        
+        fotos: 2,  
+        folder: 'propiedades-renta/oficina-royal-place',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+    },
         'casa-francisco-sarabia-renta': {
     id: 'casa-francisco-sarabia-renta',
     tipo: 'renta',
@@ -54,148 +102,6 @@ const propiedadesData = {
         fotos: 14,  
         folder: 'propiedades-renta/casa_sarabia',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
-    },
-        'plaza-montecarlo-segundo-nivel': {
-        id: 'plaza-montecarlo-segundo-nivel',
-        tipo: 'renta',
-        categoria: 'Oficina',
-        titulo: 'Planta Comercial Plaza Monte Carlo',
-        ubicacion: 'C. 1 Nte, entre calle Camelia y 8 Oriente, Francisco Sarabia, Tehuacán, Puebla',
-        precio: 75000,
-        precioTexto: '$75,000/mes',
-        coordenadas: { 
-            lat: 18.466667,    // Aproximado - Francisco Sarabia
-            lng: -97.393889    // Aproximado - Francisco Sarabia
-        },
-        
-        descripcion: `
-    📍 Ubicada en Calle 1 Norte, entre calle Camelia y 8 Oriente, esta propiedad ofrece una visibilidad y accesibilidad excepcionales para todo tipo de instituciones y corporativos.
-
-    🏢 Con 17 locales distribuidos en una inteligente forma de "L", este espacio ha sido diseñado para maximizar la funcionalidad y versatilidad, permitiendo organizar aulas, consultorios o cubículos de manera eficiente.
-
-    🚾 Cuenta con módulos de baños divididos para hombres y mujeres, garantizando comodidad e higiene para todos los usuarios del espacio.
-
-    🎯 Ideal para universidades, escuelas, academias, clínicas de especialidades médicas o corporativos que buscan un espacio amplio, funcional y bien ubicado.
-
-    🚗 El estacionamiento de la plaza está incluido, brindando tranquilidad y facilidad de acceso para alumnos, clientes, pacientes y personal.
-
-    🔑 La exclusividad y privacidad total al ocupar todo el segundo nivel de la plaza, te permite tener un control absoluto sobre el espacio y adaptarlo completamente a las necesidades de tu institución.
-
-    ✨ ¡Aprovecha esta oportunidad única para establecer tu institución en un espacio de primer nivel con todas las comodidades que necesitas!`,
-        
-        caracteristicas: [
-            { icon: 'fa-building', label: 'Locales', value: '17' },
-            { icon: 'fa-toilet', label: 'Baños', value: 'Hombres y Mujeres' },
-            { icon: 'fa-arrow-up', label: 'Nivel', value: 'Segundo piso' }
-        ],
-        
-        amenidades: [
-            'Excelente ubicación',
-            'Fácil acceso',
-            'Zona transitada',
-            'Estacionamiento',
-            'Privacidad total',
-            'Distribución funcional',
-            'Baños exclusivos',
-            'Zona comercial'
-        ],
-        
-        fotos: 5,  
-        folder: 'propiedades-renta/plaza_monte_carlo',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/plaza_monte_carlo/plaza_monte_carlo.zip`
-    },
-    'bodega-independencia-poniente': {
-    id: 'bodega-independencia-poniente',
-    tipo: 'renta',
-    categoria: 'Bodega',
-    titulo: 'Bodega Independencia Poniente',
-    ubicacion: 'Independencia Poniente #218, Tehuacán, Puebla',
-    precio: 150000,
-    precioTexto: '$150,000/mes',
-    coordenadas: { 
-        lat: 18.461667,    // Aproximado - Independencia Poniente
-        lng: -97.395278    // Aproximado - Independencia Poniente
-    },
-    
-    descripcion: `🏭 Excelente bodega industrial en renta sobre Independencia Poniente, una de las vías más importantes y transitadas de Tehuacán, que garantiza una ubicación privilegiada para operaciones comerciales de gran escala.
-
-    📍 Ubicada en Independencia Poniente #218, esta propiedad ofrece una visibilidad y accesibilidad excepcionales para centros de distribución y logística de alto volumen.
-
-    📐 Con 778 m² de superficie y dimensiones de 19.45 x 40 metros, este espacio ha sido diseñado para maximizar la eficiencia operativa, ofreciendo amplitud y versatilidad para todo tipo de actividades comerciales e industriales.
-
-    🚚 Dispone de dos zaguanes con acceso directo a la misma calle, facilitando al máximo las maniobras de carga y descarga, optimizando los tiempos de operación y la logística de tu negocio.
-
-    💼 Cuenta con un área de oficina designada, permitiendo centralizar la administración y supervisión de tus operaciones en un mismo lugar, brindando comodidad y funcionalidad al equipo de trabajo.
-
-    🎯 El espacio perfecto para centros de distribución, logística o cualquier operación comercial de gran escala que requiera eficiencia, seguridad y una ubicación inmejorable en una de las principales arterias de Tehuacán.
-
-    🚛 ¡Aprovecha esta oportunidad única para establecer tu negocio en una ubicación estratégica con todas las comodidades que necesitas para operar al máximo rendimiento!`,
-        
-        caracteristicas: [
-            { icon: 'fa-ruler-combined', label: 'Superficie', value: '778 m²' },
-            { icon: 'fa-arrows-alt-h', label: 'Dimensiones', value: '19.45 x 40 m' },
-            { icon: 'fa-building', label: 'Oficinas', value: '1 Oficina' },
-            { icon: 'fa-door-open', label: 'Accesos', value: '2 zaguanes' },
-            { icon: 'fa-truck', label: 'Maniobras', value: 'Doble acceso' }
-        ],
-        
-        amenidades: [
-            'Oficinas integradas',
-            'Zona industrial',
-            'Fácil acceso',
-            'Patio de maniobras',
-            'Excelente ubicación',
-            'Doble acceso'
-        ],
-        
-        fotos: 15,  
-        folder: 'propiedades-renta/bodega_independencia',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_independencia/bodega_independencia.zip`
-    },
-    'bodega-3norte-camelia': {
-    id: 'bodega-3norte-camelia',
-    tipo: 'renta',
-    categoria: 'Bodega',
-    titulo: 'Bodega 3 Norte y Camelia',
-    ubicacion: 'Esquina de 3 Norte y Camelia Oriente, Tehuacán, Puebla',
-    precio: 60000,
-    precioTexto: '$60,000/mes + IVA',
-    coordenadas: { 
-        lat: 18.466667,    // Aproximado - Zona Norte Tehuacán
-        lng: -97.394444    // Aproximado - Zona Norte Tehuacán
-    },
-    
-    descripcion: `
-    📍 Su ubicación privilegiada en esquina le otorga una ventaja logística invaluable, con entradas de zaguán independientes por ambas calles, facilitando al máximo las maniobras de carga y descarga para operaciones de gran volumen.
-
-    📐 Con 1,000 m² de superficie, este espacio ha sido diseñado para albergar operaciones de alta demanda, ofreciendo la amplitud y versatilidad necesaria para centros de distribución, almacenamiento estratégico o logística de gran escala.
-
-    💼 Cuenta con un área de oficina designada, permitiendo centralizar la administración y supervisión de tus operaciones en un mismo lugar, optimizando la eficiencia de tu negocio.
-
-    📦 Adicionalmente, dispone de un cuarto de almacén adicional, ideal para el resguardo seguro de materiales, herramientas o insumos de alto valor, manteniendo todo en orden y bajo control.
-
-    🎯 El espacio perfecto para operaciones logísticas, centros de distribución o almacenamiento estratégico de alto volumen que requieren eficiencia, seguridad y una ubicación inmejorable.
-
-    🚛 ¡Aprovecha esta oportunidad única para impulsar tu negocio al siguiente nivel con un espacio industrial de primer nivel!`,
-        
-        caracteristicas: [
-            { icon: 'fa-ruler-combined', label: 'Superficie', value: '1,000 m²' },
-            { icon: 'fa-building', label: 'Oficinas', value: '1 Oficina' },
-            { icon: 'fa-door-open', label: 'Accesos', value: '2 zaguanes ' }
-        ],
-        
-        amenidades: [
-            'Oficinas integradas',
-            'Fácil acceso',
-            'Patio de maniobras',
-            'Excelente ubicación',
-            'Doble acceso',
-            'Almacén adicional'
-        ],
-        
-        fotos: 3,
-        folder: 'propiedades-renta/bodega_3_norte',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega_3_norte/bodega_3_norte.zip`
     },
     'casa-cinco-bosques': {
         id: 'casa-cinco-bosques',
@@ -857,6 +763,7 @@ function renderAmenities(amenidades) {
         'Portón eléctrico': 'fa-door-closed',
         'Interphone': 'fa-phone',
         'Doble acceso': 'fa-door-open',
+        'Planta baja': 'fa-arrow-down',
         'Almacén adicional': 'fa-boxes'
 
 
