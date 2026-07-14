@@ -7,6 +7,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 // Datos de propiedades (estructura base)
 const propiedades = [
         {
+        id: 'casa-francisco-sarabia-renta',
+        tipo: 'renta',
+        categoria: 'Casa',
+        titulo: 'Casa Francisco Sarabia',
+        ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
+        precio: 17000,
+        precioTexto: '$17,000/mes',
+        metros: 0,  // Actualizar cuando tengas los metros
+        habitaciones: 3,
+        banos: 2,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/1.webp`,
+        fotos: 14,  // Actualizar cuando tengas las fotos
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
+    },{
         id: 'plaza-montecarlo-segundo-nivel',
         tipo: 'renta',
         categoria: 'Oficina',

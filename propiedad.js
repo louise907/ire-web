@@ -4,6 +4,57 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+        'casa-francisco-sarabia-renta': {
+    id: 'casa-francisco-sarabia-renta',
+    tipo: 'renta',
+    categoria: 'Casa',
+    titulo: 'Casa Francisco Sarabia',
+    ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
+    precio: 17000,
+    precioTexto: '$17,000/mes',
+    coordenadas: { 
+        lat: 18.472278,    // Aproximado - Francisco Sarabia
+        lng: -97.393194    // Aproximado - Francisco Sarabia
+    },
+    
+    descripcion: `🏠 Excelente casa en renta en la tranquila y bien establecida Colonia Francisco Sarabia, una de las zonas residenciales más cotizadas de Tehuacán por su ubicación y accesibilidad.
+
+    📍 Ubicada en Calle 6 Ote. esquina con 5 Nte., esta propiedad combina la tranquilidad de un entorno residencial con la cercanía a los principales accesos y servicios de la ciudad.
+
+    🛏️ Cuenta con 3 recámaras espaciosas y 2 baños completos, distribuidos en un diseño funcional pensado para el bienestar y comodidad de toda la familia.
+
+    🚗 Dispone de estacionamiento para 4 vehículos, brindando amplitud y seguridad para tu flotilla vehicular y la de tus visitas.
+
+    ☀️ Equipada con calentador solar y tanque estacionario, esta casa no solo ofrece confort térmico, sino también un importante ahorro energético y autonomía en el suministro de gas.
+
+    🍳 La cocina integral ha sido diseñada para facilitar la preparación de alimentos, ofreciendo un espacio práctico y funcional para el día a día.
+
+    🔐 La seguridad es una prioridad: cuenta con portón eléctrico e interphone, brindándote tranquilidad y control total sobre el acceso a tu hogar.
+
+    🐶 ¡Se aceptan mascotas! El amplio espacio exterior permite que tus animales disfruten de su propio lugar al aire libre, convirtiendo esta propiedad en el hogar perfecto para toda la familia, incluidos los peludos.
+
+    ✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la seguridad y el espacio se unen para ofrecerte la mejor experiencia de vida en Francisco Sarabia.`,
+        
+        caracteristicas: [
+            { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+            { icon: 'fa-bath', label: 'Baños', value: '2 ' },
+            { icon: 'fa-car', label: 'Estacionamiento', value: '4' }
+        ],
+        
+        amenidades: [
+            'Mascotas permitidas',
+            'Excelente ubicación',
+            'Fácil acceso',
+            'Cocina equipada',
+            'Calentador solar',
+            'Portón eléctrico',
+            'Interphone'
+        ],
+        
+        fotos: 14,  
+        folder: 'propiedades-renta/casa_sarabia',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
+    },
         'plaza-montecarlo-segundo-nivel': {
         id: 'plaza-montecarlo-segundo-nivel',
         tipo: 'renta',
@@ -803,10 +854,11 @@ function renderAmenities(amenidades) {
         'Patio amplio': 'fa-tree',
         'Calentador solar': 'fa-solar-panel',
         'Calentador solar': 'fa-solar-panel',
-        'Portón eléctrico': 'fa-gate',
+        'Portón eléctrico': 'fa-door-closed',
         'Interphone': 'fa-phone',
         'Doble acceso': 'fa-door-open',
         'Almacén adicional': 'fa-boxes'
+
 
     };
     
