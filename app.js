@@ -14,7 +14,7 @@ const propiedades = [
         ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
         precio: 7500,
         precioTexto: '$7,500/mes',
-        metros: 0,  // Actualizar cuando tengas los metros
+        metros: 0,  
         habitaciones: null,
         banos: null,
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
@@ -26,13 +26,13 @@ const propiedades = [
         categoria: 'Casa',
         titulo: 'Casa Francisco Sarabia',
         ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
-        precio: 17000,
-        precioTexto: '$17,000/mes',
-        metros: 0,  // Actualizar cuando tengas los metros
+        precio: 16000,
+        precioTexto: '$16,000/mes',
+        metros: 0,  
         habitaciones: 3,
         banos: 2,
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/1.webp`,
-        fotos: 14,  // Actualizar cuando tengas las fotos
+        fotos: 14, 
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
     },{
         id: 'terreno-parque-industrial2',
@@ -214,8 +214,8 @@ const propiedades = [
     categoria: 'Casa',
     titulo: 'Casa Arcadia',
     ubicacion: 'Calle 14 Sur, Arcadia, Tehuacán, Puebla',
-    precio: 12000,
-    precioTexto: '$12,000/mes',
+    precio: 11000,
+    precioTexto: '$11,000/mes',
     metros: null,  
     habitaciones: 3,
     banos: 2,
