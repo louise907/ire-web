@@ -7,6 +7,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 // Datos de propiedades (estructura base)
 const propiedades = [
         {
+        id: 'cuarto-aquiles-serdan',
+        tipo: 'renta',
+        categoria: 'Cuarto',
+        titulo: 'Cuarto Aquiles Serdán',
+        ubicacion: 'Calle 16 Norte, Aquiles Serdán, Tehuacán, Puebla',
+        precio: 2500,
+        precioTexto: '$2,500/mes',
+        metros: 30,
+        habitaciones: 1,
+        banos: 1,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/1.webp`,
+        fotos: 5,  
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
+    },{
         id: 'oficina-1-poniente',
         tipo: 'renta',
         categoria: 'Oficina',
@@ -48,21 +62,6 @@ const propiedades = [
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-parque-industrial2/1.webp`,
         fotos: 7,
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-parque-industrial2/fotos-parque-industrial2.zip`
-    },
-        {
-        id: 'casa-valle-luna',
-        tipo: 'venta',
-        categoria: 'Casa',
-        titulo: 'Casa Valle de la Luna',
-        ubicacion: 'Valle del Sol, Tehuacán',
-        precio: 5200000,
-        precioTexto: '$5,200,000',
-        metros: 186,
-        habitaciones: 3,
-        banos: 2,
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-valle-luna/1.webp`,
-        fotos: 13,
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-valle-luna/fosos-valle-luna.zip`
     },
     {
         id: 'casa-francisco-sarabia',

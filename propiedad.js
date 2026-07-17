@@ -4,6 +4,53 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+   'cuarto-aquiles-serdan': {
+    id: 'cuarto-aquiles-serdan',
+    tipo: 'renta',
+    categoria: 'Cuarto',
+    titulo: 'Cuarto Aquiles Serdán',
+    ubicacion: 'Calle 16 Norte, Aquiles Serdán, Tehuacán, Puebla',
+    precio: 2500,
+    precioTexto: '$2,500/mes',
+    coordenadas: { 
+        lat: 18.464806,    // 18°27'53.3"N - Aquiles Serdán
+        lng: -97.406194    // 97°24'22.3"W - Aquiles Serdán
+    },
+    
+    descripcion: `🏠 Excelente cuarto en renta en la transitada Calle 16 Norte, en la zona de Aquiles Serdán, una ubicación accesible y bien comunicada dentro de Tehuacán.
+
+📍 Este espacio ha sido diseñado para ofrecer funcionalidad y comodidad en un formato práctico, ideal para quienes buscan un lugar independiente y bien ubicado.
+
+🛏️ Cuenta con 1 recámara y 1 baño completo, distribuidos en un espacio de 30 m² que aprovecha cada rincón para brindar calidez y privacidad.
+
+🍳 Incluye un área de cocina, permitiéndote preparar tus alimentos con total independencia y comodidad en tu día a día.
+
+💧 Una de sus principales ventajas es que el servicio de agua ya está incluido en la renta, simplificando tus gastos mensuales y brindándote tranquilidad.
+
+🐶 ¡Se aceptan mascotas! Este espacio es perfecto para ti y tu compañero peludo, ofreciéndoles un hogar cómodo y acogedor.
+
+✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la funcionalidad, la ubicación y la comodidad se unen para ofrecerte una excelente opción de vivienda en Tehuacán.`,
+    
+    caracteristicas: [
+        { icon: 'fa-bed', label: 'Recámara', value: '1' },
+        { icon: 'fa-bath', label: 'Baños', value: '1' },
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '30 m²' },
+        { icon: 'fa-utensils', label: 'Cocina', value: 'Área incluida' }
+    ],
+    
+    amenidades: [
+        'Mascotas permitidas',
+        'Agua incluida',
+        'Excelente ubicación',
+        'Fácil acceso',
+        'Zona transitada',
+        'Cocina equipada'
+    ],
+    
+    fotos: 5, 
+    folder: 'propiedades-renta/16norte-cuartos',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
+},
     'oficina-1-poniente': {
     id: 'oficina-1-poniente',
     tipo: 'renta',
@@ -155,35 +202,6 @@ Si buscas una propiedad con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳�
         fotos: 14,
         folder: 'propiedades-venta/casa-francisco-sarabia',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-francisco-sarabia/fotos-sarabia.zip`
-    },
-    'casa-valle-luna': {
-        id: 'casa-valle-luna',
-        tipo: 'venta',
-        categoria: 'Casa',
-        titulo: 'Casa Valle de la Luna',
-        ubicacion: 'Fraccionamiento Valle de la Luna, Tehuacán, Puebla',
-        precio: 5200000,
-        precioTexto: '$5,200,000',
-        coordenadas: { lat: 18.478111, lng: -97.422917 },
-        descripcion: `✨ Residencia con carácter en Valle de la Luna ✨
-💰 Precio: $5,200,000 MXN
-
-Si buscas una casa con personalidad, espacios generosos y un ambiente cálido, esta propiedad en Fraccionamiento Valle de la Luna puede convertirse en tu próximo hogar. 🏡
-
-Su arquitectura y distribución la hacen ideal para familias que valoran el confort y la seguridad.`,
-        caracteristicas: [
-            { icon: 'fa-bed', label: 'Recámaras', value: '3' },
-            { icon: 'fa-bath', label: 'Baños', value: '3' },
-            { icon: 'fa-toilet', label: 'Medios baños', value: '1' },
-            { icon: 'fa-ruler-combined', label: 'Terreno', value: '276.59 m²' },
-            { icon: 'fa-home', label: 'Construcción', value: '186 m²' },
-            { icon: 'fa-car', label: 'Estacionamiento', value: '6' },
-            { icon: 'fa-calendar', label: 'Año construcción', value: '2010' }
-        ],
-        amenidades: ['Balcón', 'Cisterna', 'Jardín', 'Patio', 'Terraza', 'Circuito cerrado', 'Cocina equipada', 'Cuarto de servicio', 'Dos plantas', 'Estudio', 'Fraccionamiento privado', 'Hidroneumático', 'Portero', 'Seguridad 24 horas', 'Mascotas permitidas'],
-        fotos: 13,
-        folder: 'propiedades-venta/casa-valle-luna',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-valle-luna/fosos-valle-luna.zip`
     },
     'terreno-parque-industrial2': {
         id: 'terreno-parque-industrial2',
@@ -686,6 +704,7 @@ function renderAmenities(amenidades) {
         'Interphone': 'fa-phone',
         'Doble acceso': 'fa-door-open',
         'Planta baja': 'fa-arrow-down',
+        'Cuarto': 'fa-bed',
         'Almacén adicional': 'fa-boxes'
 
 
