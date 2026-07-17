@@ -7,6 +7,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 // Datos de propiedades (estructura base)
 const propiedades = [
         {
+        id: 'loft-comercial-escamilla',
+        tipo: 'renta',
+        categoria: 'Local Comercial',
+        titulo: 'Loft Comercial Escamilla',
+        ubicacion: 'Edificio Escamilla, Tres Oriente esquina con Segunda de Morelos, Centro, Tehuacán, Puebla',
+        precio: 10000,
+        precioTexto: '$10,000/mes',
+        metros: 0,  
+        habitaciones: null,
+        banos: 1,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/1.webp`,
+        fotos: 8, 
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/loft_centro.zip`
+    },{
         id: 'cuarto-aquiles-serdan',
         tipo: 'renta',
         categoria: 'Cuarto',

@@ -4,6 +4,54 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+   'loft-comercial-escamilla': {
+    id: 'loft-comercial-escamilla',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Loft Comercial Escamilla',
+    ubicacion: 'Edificio Escamilla, Tres Oriente esquina con Segunda de Morelos, Centro, Tehuacán, Puebla',
+    precio: 10000,
+    precioTexto: '$10,000/mes',
+    coordenadas: { 
+        lat: 18.460833,    // Aproximado - Centro de Tehuacán (Catedral)
+        lng: -97.391944    // Aproximado - Centro de Tehuacán (Catedral)
+    },
+    
+    descripcion: `🏢 Excelente loft comercial en renta en el exclusivo Edificio Escamilla, ubicado en Tres Oriente esquina con Segunda de Morelos, en el corazón del Centro de Tehuacán.
+
+📍 Ubicación inmejorable en el primer cuadro de la ciudad, justo atrás de la Catedral, ofreciendo una vista privilegiada y una presencia comercial de alto prestigio en la zona más emblemática de Tehuacán.
+
+🏢 Este loft comercial (Loft 1) se encuentra en la planta alta del edificio, arriba de Megaempeños, brindando privacidad y exclusividad para tu negocio o consultorio.
+
+✨ Cuenta con calentador eléctrico, garantizando confort térmico durante todo el año, y una práctica media barra de cocina que añade funcionalidad y versatilidad al espacio.
+
+🎯 Ideal para oficinas, consultorios o negocios que buscan una ubicación premium en el corazón de la ciudad, con fácil acceso y alta visibilidad para tus clientes.
+
+💼 ¡Establece tu negocio en una de las ubicaciones más cotizadas de Tehuacán y ofrece a tus clientes una experiencia de primer nivel!`,
+    
+    caracteristicas: [
+        { icon: 'fa-building', label: 'Edificio', value: 'Escamilla' },
+        { icon: 'fa-toilet', label: 'Baños', value: '1' },
+        { icon: 'fa-bolt', label: 'Calentador', value: 'Eléctrico' },
+        { icon: 'fa-utensils', label: 'Cocina', value: 'Media barra' },
+        { icon: 'fa-arrow-up', label: 'Ubicación', value: 'Planta alta' }
+    ],
+    
+    amenidades: [
+        'Excelente ubicación',
+        'Céntrico',
+        'Fácil acceso',
+        'Zona transitada',
+        'Vista privilegiada',
+        'Calentador eléctrico',
+        'Media barra de cocina',
+        'Zona comercial'
+    ],
+    
+    fotos: 8,  
+    folder: 'propiedades-renta/loft_centro',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/loft_centro.zip`
+}, 
    'cuarto-aquiles-serdan': {
     id: 'cuarto-aquiles-serdan',
     tipo: 'renta',
