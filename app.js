@@ -6,7 +6,22 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 // Datos de propiedades (estructura base)
 const propiedades = [
+        
         {
+        id: 'suite-ejecutiva-hotel-boutique',
+        tipo: 'renta',
+        categoria: 'Suite',
+        titulo: 'Suite Ejecutiva Hotel Boutique',
+        ubicacion: '1 Poniente, Hotel Boutique Tehuacán, Centro, Tehuacán, Puebla',
+        precio: 7500,
+        precioTexto: '$7,500/mes (¡Todos los servicios incluidos!)',
+        metros: 0,  // Actualizar cuando tengas los metros
+        habitaciones: 1,
+        banos: 1,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/suite_HB/1.webp`,
+        fotos: 4,  
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/suite_HB/suit_HB.zip`
+    },{
         id: 'loft-comercial-escamilla',
         tipo: 'renta',
         categoria: 'Local Comercial',

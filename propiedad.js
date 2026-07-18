@@ -4,6 +4,63 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+  'suite-ejecutiva-hotel-boutique': {
+    id: 'suite-ejecutiva-hotel-boutique',
+    tipo: 'renta',
+    categoria: 'Suite',
+    titulo: 'Suite Ejecutiva Hotel Boutique',
+    ubicacion: '1 Poniente, Hotel Boutique Tehuacán, Centro, Tehuacán, Puebla',
+    precio: 7500,
+    precioTexto: '$7,500/mes (¡Todos los servicios incluidos!)',
+    coordenadas: { 
+        lat: 18.461667,    // Aproximado - Centro de Tehuacán
+        lng: -97.395278    // Aproximado - Centro de Tehuacán
+    },
+    
+    descripcion: `✨ Suite ejecutiva en renta en el exclusivo Hotel Boutique Tehuacán, ubicada en 1 Poniente, en el corazón del Centro de Tehuacán, ofreciendo una experiencia de vida premium sin precedentes.
+
+🛏️ Esta suite amueblada cuenta con 1 recámara equipada con 2 camas, ideal para ejecutivos o profesionistas que buscan máximo confort y un espacio listo para habitar desde el primer día.
+
+📺 Totalmente equipada con TV, clóset, burós y mueble con espejo, cada detalle ha sido cuidadosamente seleccionado para brindar una estancia placentera y funcional.
+
+💡 Disfruta del concepto All-Inclusive: olvídate de los recibos, tu renta ya cubre agua caliente, luz e internet, permitiéndote enfocarte en lo que realmente importa sin preocupaciones adicionales.
+
+🧹 Incluye servicio de limpieza a la habitación, brindándote un estilo de vida sin preocupaciones donde cada día encuentras tu espacio impecable y acogedor.
+
+🚗 Cuenta con 1 estacionamiento incluido, garantizando comodidad y seguridad para tu vehículo.
+
+🎯 Ideal para ejecutivos y profesionistas que buscan máximo confort y un estilo de vida sin preocupaciones, con la seguridad y prestigio de vivir dentro de un hotel de alto nivel.
+
+✨ ¡Vive la experiencia premium que mereces en el corazón de Tehuacán!`,
+    
+    caracteristicas: [
+        { icon: 'fa-bed', label: 'Recámara', value: '1 (2 camas)' },
+        { icon: 'fa-bath', label: 'Baños', value: '1 completo' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '1' },
+        { icon: 'fa-tv', label: 'TV', value: 'Incluida' },
+        { icon: 'fa-wifi', label: 'Internet', value: 'Incluido' },
+        { icon: 'fa-bolt', label: 'Luz', value: 'Incluida' },
+        { icon: 'fa-tint', label: 'Agua caliente', value: 'Incluida' }
+    ],
+    
+    amenidades: [
+        'Excelente ubicación',
+        'Céntrico',
+        'Fácil acceso',
+        'Estacionamiento',
+        'Amueblado',
+        'Internet incluido',
+        'Luz incluida',
+        'Agua incluida',
+        'Servicio de limpieza',
+        'Seguridad 24 horas',
+        'Zona transitada'
+    ],
+    
+    fotos: 4, 
+    folder: 'propiedades-renta/suite_HB',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/suite_HB/suit_HB.zip`
+},
    'loft-comercial-escamilla': {
     id: 'loft-comercial-escamilla',
     tipo: 'renta',
@@ -708,7 +765,10 @@ function renderAmenities(amenidades) {
         'Doble acceso': 'fa-door-open',
         'Planta baja': 'fa-arrow-down',
         'Cuarto': 'fa-bed',
-        'Almacén adicional': 'fa-boxes'
+        'Almacén adicional': 'fa-boxes',
+        'Suite': 'fa-crown',
+        'Amueblado': 'fa-couch',
+        'Servicio de limpieza': 'fa-broom'
 
 
     };
