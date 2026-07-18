@@ -566,51 +566,6 @@ Tehuacán, Puebla
     fotos: 22,  
     folder: 'propiedades-renta/casa-arcadea',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
-},
-'local-centro-betanzo': {
-    id: 'local-centro-betanzo',
-    tipo: 'renta',
-    categoria: 'Local Comercial',
-    titulo: 'Local Centro Betanzo',
-    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
-    precio: 2500,
-    precioTexto: '$2,500/mes (Luz y agua incluidos)',
-    coordenadas: { 
-        lat: 18.462778,    // Aproximado - Centro de Tehuacán
-        lng: -97.392500    // Aproximado - Centro de Tehuacán
-    },
-    
-    descripcion: `🏢 Excelente local comercial en renta en el corazón del Centro de Tehuacán, una ubicación privilegiada que garantiza alta afluencia y visibilidad para tu negocio.
-
-📍 Ubicado en la Privada A. Betanzo Sancho con entrada por la transitada Calle 2 Oriente, este espacio te conecta con el vibrante ambiente comercial del centro histórico de la ciudad.
-
-📐 Su distribución práctica y funcional ha sido diseñada para que puedas iniciar operaciones de inmediato, sin necesidad de realizar grandes adecuaciones. Perfecto para emprendedores que buscan un espacio listo para arrancar.
-
-💡 Una de sus mayores ventajas es que los servicios básicos de luz y agua están incluidos en la renta, lo que te permite tener un control total de tus gastos operativos desde el primer día.
-
-🎯 Ideal para consultorios profesionales, oficinas comerciales, tiendas de especialidad o cualquier negocio que busque establecerse en una ubicación céntrica y accesible.
-
-✨ ¡Aprovecha esta oportunidad única para hacer crecer tu negocio en el corazón de Tehuacán!`,
-    
-    caracteristicas: [
-        { icon: 'fa-ruler-combined', label: 'Superficie', value: '20 m²' },
-        { icon: 'fa-toilet', label: 'Baños', value: '1' },
-        { icon: 'fa-store', label: 'Tipo', value: 'Local Comercial' },
-        { icon: 'fa-door-open', label: 'Acceso', value: 'Por 2 Oriente' }
-    ],
-    
-    amenidades: [
-        'Agua incluida',
-        'Luz incluida',
-        'Céntrico',
-        'Excelente ubicación',
-        'Fácil acceso',
-        'Zona transitada'
-    ],
-    
-    fotos: 3, 
-    folder: 'propiedades-renta/local_centro',
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/local_centro.zip`
 }
 };
 

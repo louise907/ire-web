@@ -221,20 +221,6 @@ const propiedades = [
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/1.webp`,
     fotos: 22,  
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
-},{
-    id: 'local-centro-betanzo',
-    tipo: 'renta',
-    categoria: 'Local Comercial',
-    titulo: 'Local Centro Betanzo',
-    ubicacion: 'Privada A. Betanzo Sancho (Entrada por 2 Oriente), Centro, Tehuacán, Puebla',
-    precio: 2500,
-    precioTexto: '$2,500/mes (Luz y agua incluidos)',
-    metros: 20,
-    habitaciones: null,
-    banos: 1,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/1.webp`,
-    fotos: 3,  
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/local_centro/local_centro.zip`
 }
 ];
 
