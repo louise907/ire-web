@@ -50,20 +50,6 @@ const propiedades = [
         fotos: 5,  
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
     },{
-        id: 'oficina-1-poniente',
-        tipo: 'renta',
-        categoria: 'Oficina',
-        titulo: 'Oficina 1 Poniente',
-        ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-        precio: 7500,
-        precioTexto: '$7,500/mes',
-        metros: 0,  
-        habitaciones: null,
-        banos: null,
-        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
-        fotos: 2,  
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
-    },{
         id: 'casa-francisco-sarabia-renta',
         tipo: 'renta',
         categoria: 'Casa',

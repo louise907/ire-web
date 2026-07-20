@@ -156,54 +156,6 @@ const propiedadesData = {
     folder: 'propiedades-renta/16norte-cuartos',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
 },
-    'oficina-1-poniente': {
-    id: 'oficina-1-poniente',
-    tipo: 'renta',
-    categoria: 'Oficina',
-    titulo: 'Oficina 1 Poniente',
-    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
-    precio: 7500,
-    precioTexto: '$7,500/mes',
-    coordenadas: { 
-        lat: 18.461667,    // Aproximado - Centro de Tehuacán
-        lng: -97.395278    // Aproximado - Centro de Tehuacán
-    },
-    
-    descripcion: `🏢 Excelente local para oficina en renta en el corazón del Centro de Tehuacán, una ubicación privilegiada que combina prestigio, accesibilidad y funcionalidad para tu negocio.
-
-    📍 Ubicado en 1 Poniente No. 135, en planta baja, este espacio ha sido diseñado para facilitar el acceso de tus clientes y colaboradores, eliminando barreras y ofreciendo comodidad desde el primer momento.
-
-    ❄️ Equipado con clima, podrás trabajar con la mayor comodidad durante todo el año, manteniendo un ambiente agradable y profesional para tus reuniones y actividades diarias.
-
-    💡 Una de sus principales ventajas es el excelente ahorro operativo: el servicio de agua y la conexión Wi-Fi ya están cubiertos por el arrendador, por lo que solo pagas tu recibo de luz, simplificando tus gastos mensuales y permitiéndote enfocarte en lo que realmente importa: hacer crecer tu negocio.
-
-    🎯 Ideal para despachos corporativos, consultorios o profesionales independientes que buscan una ubicación céntrica con todos los servicios necesarios para operar con eficiencia y profesionalismo.
-
-    ✨ ¡Establece tu oficina en el corazón de Tehuacán y brinda a tus clientes la experiencia que merecen!`,
-        
-        caracteristicas: [
-            { icon: 'fa-building', label: 'Tipo', value: 'Oficina Local' },
-            { icon: 'fa-door-open', label: 'Acceso', value: 'Planta baja' },
-            { icon: 'fa-snowflake', label: 'Clima', value: 'Incluido' },
-            { icon: 'fa-wifi', label: 'Wi-Fi', value: 'Incluido' },
-            { icon: 'fa-tint', label: 'Agua', value: 'Incluida' }
-        ],
-        
-        amenidades: [
-            'Excelente ubicación',
-            'Céntrico',
-            'Fácil acceso',
-            'Clima incluido',
-            'Agua incluida',
-            'Internet incluido',
-            'Zona transitada',
-            'Planta baja'
-        ],
-        
-        fotos: 2,  
-        folder: 'propiedades-renta/oficina-royal-place',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
-    },
         'casa-francisco-sarabia-renta': {
     id: 'casa-francisco-sarabia-renta',
     tipo: 'renta',
