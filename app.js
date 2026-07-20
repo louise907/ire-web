@@ -8,6 +8,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const propiedades = [
         
         {
+        id: 'departamento-4-poniente',
+        tipo: 'renta',
+        categoria: 'Departamento',
+        titulo: 'Departamento 4 Poniente',
+        ubicacion: '4 Poniente, Centro, Tehuacán, Puebla',
+        precio: 7000,
+        precioTexto: '$7,000/mes',
+        metros: 0,  // Actualizar cuando tengas los metros
+        habitaciones: 3,
+        banos: 1,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento_centro/1.webp`,
+        fotos: 13, 
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento_centro/departamento_centro.zip`
+    },{
         id: 'suite-ejecutiva-hotel-boutique',
         tipo: 'renta',
         categoria: 'Suite',

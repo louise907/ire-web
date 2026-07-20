@@ -4,6 +4,59 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+    'departamento-4-poniente': {
+    id: 'departamento-4-poniente',
+    tipo: 'renta',
+    categoria: 'Departamento',
+    titulo: 'Departamento 4 Poniente',
+    ubicacion: '4 Poniente, Centro, Tehuacán, Puebla',
+    precio: 7000,
+    precioTexto: '$7,000/mes',
+    coordenadas: { 
+        lat: 18.461389,    // Aproximado - Centro de Tehuacán
+        lng: -97.393889    // Aproximado - Centro de Tehuacán
+    },
+    
+    descripcion: `🏢 Excelente departamento en renta en la céntrica calle 4 Poniente, una ubicación privilegiada que combina la tranquilidad de un entorno residencial con la cercanía a los principales servicios de Tehuacán.
+
+    📍 Ubicado en planta alta, este espacio ofrece una ubicación inmejorable a solo dos cuadras de la Clínica 30 del IMSS y a una cuadra del parque ecológico, brindándote acceso rápido a servicios de salud y áreas verdes para disfrutar en familia.
+
+    🛏️ Cuenta con 3 recámaras con clóset, ofreciendo espacios cómodos y funcionales para cada miembro de la familia, asegurando privacidad y orden en el día a día.
+
+    🛋️ Su distribución ha sido cuidadosamente diseñada para maximizar el confort, con sala, comedor, cocina y área de lavado, creando ambientes amplios y bien iluminados que invitan a la convivencia familiar.
+
+    🚗 Su ubicación estratégica te permite moverte con facilidad por toda la ciudad, estando cerca de comercios, escuelas y vías principales.
+
+    🎯 Ideal para quienes buscan un entorno tranquilo y bien ubicado, con espacios cómodos y funcionales para disfrutar de la mejor calidad de vida en el centro de Tehuacán.
+
+    ⚠️ Por reglamento, no se aceptan mascotas ni estudiantes.
+
+    ✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la ubicación y la tranquilidad se unen para ofrecerte la mejor experiencia de vida en el centro de Tehuacán.`,
+        
+        caracteristicas: [
+            { icon: 'fa-bed', label: 'Recámaras', value: '3 (con clóset)' },
+            { icon: 'fa-bath', label: 'Baños', value: '1' },
+            { icon: 'fa-arrow-up', label: 'Ubicación', value: 'Planta alta' },
+            { icon: 'fa-sofa', label: 'Sala/Comedor', value: 'Incluidos' },
+            { icon: 'fa-utensils', label: 'Cocina', value: 'Incluida' },
+            { icon: 'fa-washing-machine', label: 'Área de lavado', value: 'Incluida' }
+        ],
+        
+        amenidades: [
+            'Excelente ubicación',
+            'Céntrico',
+            'Fácil acceso',
+            'Zona transitada',
+            'Cerca de hospital',
+            'Cerca de áreas verdes',
+            'Planta alta',
+            'Tranquilidad'
+        ],
+        
+        fotos: 13,  
+        folder: 'propiedades-renta/departamento_centro',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento_centro/departamento_centro.zip`
+    },
   'suite-ejecutiva-hotel-boutique': {
     id: 'suite-ejecutiva-hotel-boutique',
     tipo: 'renta',
@@ -720,8 +773,9 @@ function renderAmenities(amenidades) {
         'Almacén adicional': 'fa-boxes',
         'Suite': 'fa-crown',
         'Amueblado': 'fa-couch',
-        'Servicio de limpieza': 'fa-broom'
-
+        'Servicio de limpieza': 'fa-broom',
+        'Planta alta': 'fa-arrow-up',
+        'Área de lavado': 'fa-washing-machine'
 
     };
     
