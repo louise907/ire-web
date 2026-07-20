@@ -539,43 +539,43 @@ Tehuacán, Puebla
     fotos: 13,
     folder: 'propiedades-renta/bodega-santa-cruz-buenavista',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz.zip`
-},
-'casa-arcadia': {
-    id: 'casa-arcadia',
-    tipo: 'renta',
-    categoria: 'Casa',
-    titulo: 'Casa Arcadia',
-    ubicacion: 'Calle 14 Sur, Arcadia, Tehuacán, Puebla',
-    precio: 11000,
-    precioTexto: '$11,000/mes',
-    coordenadas: { 
-        lat: 18.463083,   
-        lng: -97.405167      
-    },
-    
-    descripcion: `🏠 Excelente casa en renta en la tranquila y accesible colonia Arcadia, un lugar ideal para disfrutar de la paz y comodidad que tu familia merece.
+}//,
+//'casa-arcadia': {
+//    id: 'casa-arcadia',
+//    tipo: 'renta',
+//    categoria: 'Casa',
+//    titulo: 'Casa Arcadia',
+//    ubicacion: 'Calle 14 Sur, Arcadia, Tehuacán, Puebla',
+//    precio: 11000,
+//    precioTexto: '$11,000/mes',
+//    coordenadas: { 
+//        lat: 18.463083,   
+//         lng: -97.405167      
+//    },
+//    
+//    descripcion: `🏠 Excelente casa en renta en la tranquila y accesible colonia Arcadia, un lugar ideal para disfrutar de la paz y comodidad que tu familia merece.
 
-🛏️ Su distribución ha sido cuidadosamente diseñada para ofrecer espacios amplios y funcionales, pensados para el bienestar de toda la familia. Cada ambiente ha sido creado para brindar calidez y confort, haciendo de esta casa un verdadero hogar.
+//🛏️ Su distribución ha sido cuidadosamente diseñada para ofrecer espacios amplios y funcionales, pensados para el bienestar de toda la familia. Cada ambiente ha sido creado para brindar calidez y confort, haciendo de esta casa un verdadero hogar.
 
-✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la tranquilidad y la convivencia familiar se unen en perfecta armonía.`,
-    
-    caracteristicas: [
-        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
-        { icon: 'fa-bath', label: 'Baños', value: '2' },
-        { icon: 'fa-paw', label: 'Patio', value: 'Para mascotas' },
-    ],
-    
-    amenidades: [
-        'Tranquilidad',
-        'Excelente ubicación',
-        'Fácil acceso',
-        'Mascotas permitidas'
-    ],
-    
-    fotos: 22,  
-    folder: 'propiedades-renta/casa-arcadea',
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
-}
+//✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la tranquilidad y la convivencia familiar se unen en perfecta armonía.`,
+//    
+//    caracteristicas: [
+//        { icon: 'fa-bed', label: 'Recámaras', value: '3' },
+//        { icon: 'fa-bath', label: 'Baños', value: '2' },
+//        { icon: 'fa-paw', label: 'Patio', value: 'Para mascotas' },
+//    ],
+   
+//    amenidades: [
+//        'Tranquilidad',
+//        'Excelente ubicación',
+//        'Fácil acceso',
+//        'Mascotas permitidas'
+//    ],
+//    
+//    fotos: 22,  
+//    folder: 'propiedades-renta/casa-arcadea',
+//    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
+//}
 };
 
 let currentProperty = null;

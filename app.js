@@ -208,21 +208,21 @@ const propiedades = [
     imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/1.webp`,
     fotos: 3,
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
-},{
-    id: 'casa-arcadia',
-    tipo: 'renta',
-    categoria: 'Casa',
-    titulo: 'Casa Arcadia',
-    ubicacion: 'Calle 14 Sur, Arcadia, Tehuacán, Puebla',
-    precio: 11000,
-    precioTexto: '$11,000/mes',
-    metros: null,  
-    habitaciones: 3,
-    banos: 2,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/1.webp`,
-    fotos: 22,  
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
-}
+}//,{
+  //  id: 'casa-arcadia',
+  //  tipo: 'renta',
+  //  categoria: 'Casa',
+  //  titulo: 'Casa Arcadia',
+  //  ubicacion: 'Calle 14 Sur, Arcadia, Tehuacán, Puebla',
+  //  precio: 11000,
+  //  precioTexto: '$11,000/mes',
+  //  metros: null,  
+  //  habitaciones: 3,
+  //  banos: 2,
+  //  imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/1.webp`,
+  //  fotos: 22,  
+  //  zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa-arcadea/casa-arcadea.zip`
+//}
 ];
 
 // Función para crear tarjeta de propiedad
