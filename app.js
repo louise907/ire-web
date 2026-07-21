@@ -49,11 +49,15 @@ const propiedades = [
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/1.webp`,
         fotos: 8, 
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/loft_centro.zip`
+<<<<<<< HEAD
     },/*
     // ✅ RENTADA - 21 Julio 2026
     // Propiedad: Cuarto Aquiles Serdán (16 Norte)
     // Precio: $2,500/mes | Metros: 30m²
     {
+=======
+    },{
+>>>>>>> a99797e (descomentar cuarto de serda)
         id: 'cuarto-aquiles-serdan',
         tipo: 'renta',
         categoria: 'Cuarto',
@@ -67,7 +71,7 @@ const propiedades = [
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/1.webp`,
         fotos: 5,  
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/16norte-cuartos/fotos-16-norte-cuartos.zip`
-    },*/{
+    },{
         id: 'casa-francisco-sarabia-renta',
         tipo: 'renta',
         categoria: 'Casa',
