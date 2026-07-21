@@ -49,7 +49,11 @@ const propiedades = [
         imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/1.webp`,
         fotos: 8, 
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/loft_centro.zip`
-    },/*{
+    },/*
+    // ✅ RENTADA - 21 Julio 2026
+    // Propiedad: Cuarto Aquiles Serdán (16 Norte)
+    // Precio: $2,500/mes | Metros: 30m²
+    {
         id: 'cuarto-aquiles-serdan',
         tipo: 'renta',
         categoria: 'Cuarto',
