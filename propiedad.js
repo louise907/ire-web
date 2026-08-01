@@ -1,5 +1,5 @@
 // Auto-generado por IRE Dashboard
-// Fecha: 2026-08-01T07:38:28.999283
+// Fecha: 2026-08-01T07:39:07.574380
 
 const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
@@ -825,6 +825,31 @@ const propiedadesData = {
         fotos: 3,
         folder: 'terreno-san-lorenzo',
         zip: `https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
+    },
+    'abchsk': {
+        id: 'abchsk',
+        tipo: 'venta',
+        categoria: 'Departamento',
+        titulo: 'ABChsk',
+        ubicacion: 'Centro',
+        precio: 5000000.0,
+        precioTexto: '$5,000,000',
+        coordenadas: { lat: 18.999999, lng: 19.999999 },
+        descripcion: `Prueba`,
+        caracteristicas: [
+            { icon: 'fa-bed', label: 'Recámaras', value: '4' },
+            { icon: 'fa-bath', label: 'Baños', value: '4' },
+            { icon: 'fa-toilet', label: 'Medios baños', value: '5' },
+            { icon: 'fa-ruler-combined', label: 'Terreno', value: '555 m²' },
+            { icon: 'fa-home', label: 'Construcción', value: '666 m²' },
+            { icon: 'fa-car', label: 'Estacionamiento', value: '6' }
+        ],
+        amenidades: [
+            'jardin'
+        ],
+        fotos: 5,
+        folder: 'Www.5.com',
+        zip: `Www.5.com`
     },
     'casa-cinco-bosques': {
         id: 'casa-cinco-bosques',

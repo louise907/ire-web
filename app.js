@@ -1,5 +1,5 @@
 // Auto-generado por IRE Dashboard
-// Fecha: 2026-08-01T07:38:28.998451
+// Fecha: 2026-08-01T07:39:07.573568
 
 const propiedades = [
     {
@@ -573,6 +573,19 @@ const propiedades = [
         habitaciones: '0',
         banos: '0',
         imagen: 'https://bjzwbpkkazhczwtsxtey.supabase.co/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/1.webp'
+    },
+    {
+        id: 'abchsk',
+        tipo: 'venta',
+        categoria: 'Departamento',
+        titulo: 'ABChsk',
+        ubicacion: 'Centro',
+        precio: 5000000.0,
+        precioTexto: '$5,000,000',
+        metros: '666 m²' if metros else 'N/A',
+        habitaciones: '4',
+        banos: '4',
+        imagen: 'Www.5.com'
     },
     {
         id: 'casa-cinco-bosques',
