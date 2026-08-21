@@ -8,6 +8,20 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const propiedades = [
         
       {
+        id: 'bodega-san-lorenzo-av-pueblo-bonito',
+        tipo: 'renta',
+        categoria: 'Bodega',
+        titulo: 'Bodega San Lorenzo',
+        ubicacion: 'Avenida Pueblo Bonito esquina 12 de Diciembre, Tehuacán, Puebla',
+        precio: 15000,
+        precioTexto: '$15,000/mes',
+        metros: 120,  // Actualizar cuando tengas los metros
+        habitaciones: 0,
+        banos: 1,
+        imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo-av-pueblo-bonito/1.webp`,
+        fotos: 4,  
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo-av-pueblo-bonito/bodega-av-pueblo-bonito.zip`
+    },{
         id: 'suite-ejecutiva-hotel-boutique',
         tipo: 'renta',
         categoria: 'Suite',
@@ -108,21 +122,6 @@ const propiedades = [
         fotos: 37,
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-cinco-bosques/fotos-cinco-bosques.zip`
     },
-   {
-    id: 'bodega-san-lorenzo',
-    tipo: 'renta',
-    categoria: 'Bodega',
-    titulo: 'Bodega San Lorenzo',
-    ubicacion: 'San Lorenzo, Tehuacán, Puebla',
-    precio: 23000,
-    precioTexto: '$23,000/mes',
-    metros: 400,
-    habitaciones: null,
-    banos: null,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/1.webp`,
-    fotos: 3, 
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
-},
     {
     id: 'bodega-san-diego',
     tipo: 'renta',
@@ -138,21 +137,7 @@ const propiedades = [
     fotos: 12, 
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/fotos-bodega-san-diego.zip`
     },
-    {
-    id: 'bodega-av-cuauhtemoc',
-    tipo: 'renta',
-    categoria: 'Bodega',
-    titulo: 'Bodega Av. Cuauhtémoc',
-    ubicacion: 'Av. Cuauhtémoc, Tehuacán, Puebla',
-    precio: 35000,
-    precioTexto: '$35,000/mes',
-    metros: 720,
-    habitaciones: null,
-    banos: null,
-    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/1.webp`,
-    fotos: 1, 
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
-    },{
+   {
     id: 'oficina-2-norte',
     tipo: 'renta',
     categoria: 'Oficina',

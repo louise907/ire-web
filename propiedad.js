@@ -4,6 +4,53 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
+
+    'bodega-san-lorenzo-av-pueblo-bonito': {
+    id: 'bodega-san-lorenzo-av-pueblo-bonito',
+    tipo: 'renta',
+    categoria: 'Bodega',
+    titulo: 'Bodega San Lorenzo',
+    ubicacion: 'Avenida Pueblo Bonito esquina 12 de Diciembre, Tehuacán, Puebla',
+    precio: 15000,
+    precioTexto: '$15,000/mes',
+    
+    // 📍 COORDENADAS (aproximadas - San Lorenzo, Tehuacán)
+    coordenadas: { 
+        lat: 18.456389,    // Aproximado - San Lorenzo
+        lng: -97.400556    // Aproximado - San Lorenzo
+    },
+    
+    // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
+    descripcion: `🏭 Excelente bodega en renta en una ubicación estratégica de Tehuacán, sobre la transitada Avenida Pueblo Bonito en su esquina con 12 de Diciembre.
+
+    📍 Este espacio ofrece acceso directo y fácil maniobra para carga y descarga, ideal para operaciones logísticas y de distribución comercial.
+
+    🏢 Cuenta con un espacio de oficina privado que te permite centralizar la administración de tu negocio en el mismo lugar, optimizando tiempos y recursos.
+
+    🚽 Dispone de medio baño para servicio, brindando comodidad tanto a tu personal como a tus visitas.
+
+    📐 Con 120 m² de superficie, es el espacio perfecto para almacenamiento, punto de distribución comercial o centro de operaciones logísticas de tamaño mediano.
+
+    🚀 ¡Una oportunidad práctica y funcional para hacer crecer tu negocio!`,
+    
+    // 📊 CARACTERÍSTICAS: Datos medibles
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '120 m²' },
+        { icon: 'fa-toilet', label: 'Baños', value: '1' },
+        { icon: 'fa-building', label: 'Oficina', value: '1' }
+    ],
+    
+    // ✨ AMENIDADES: Servicios extras
+    amenidades: [
+        
+        'Fácil acceso',
+        'Acceso pavimentado'
+    ],
+    
+    fotos: 4,
+    folder: 'propiedades-renta/bodega-san-lorenzo-av-pueblo-bonito',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo-av-pueblo-bonito/bodega-av-pueblo-bonito.zip`
+    },
     'terreno-antigua-magdalena': {
     id: 'terreno-antigua-magdalena',
     tipo: 'venta',
@@ -432,66 +479,6 @@ const propiedadesData = {
     folder: 'propiedades-renta/bodega-san-diego',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-diego/fotos-bodega-san-diego.zip`
 },
-     'bodega-av-cuauhtemoc': {
-    id: 'bodega-av-cuauhtemoc',
-    tipo: 'renta',
-    categoria: 'Bodega',
-    titulo: 'Bodega Av. Cuauhtémoc',
-    ubicacion: 'Av. Cuauhtémoc (atrás del Oxxo, casi llegando a Las Palmas), Tehuacán, Puebla',
-    precio: 35000,
-    precioTexto: '$35,000/mes',
-    coordenadas: { 
-        lat: 18.481806,  
-        lng: -97.397444  
-    },
-    
-    // 📝 DESCRIPCIÓN: SOLO TEXTO NARRATIVO
-    descripcion: `🏭 Excelente bodega en renta en Av. Cuauhtémoc, una de las zonas con mayor movimiento comercial de Tehuacán.
-    💡 Cuenta con conexión eléctrica bifásica, ideal para negocios que requieren mayor capacidad de energía.
-    📍 Ubicación estratégica: atrás del Oxxo, casi llegando a Las Palmas, con fácil acceso para carga y descarga.
-    🚛 Perfecta para almacenamiento comercial, punto de venta mayorista o logística urbana.`,
-    
-    // 📊 CARACTERÍSTICAS: DATOS MEDIBLES
-    caracteristicas: [
-        { icon: 'fa-ruler-combined', label: 'Superficie', value: '720 m²' },
-        { icon: 'fa-bolt', label: 'Tipo de luz', value: 'Bifásica' },
-        { icon: 'fa-door-open', label: 'Acceso', value: 'Calle principal' }
-    ],
-    amenidades: [],
-    fotos: 1,
-    folder: 'propiedades-renta/bodega-av-cuauctemoc',
-    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-av-cuauctemoc/fotos-bodega-cuauctemoc.zip`
-},
-    'bodega-san-lorenzo': {
-        id: 'bodega-san-lorenzo',
-        tipo: 'renta',
-        categoria: 'Bodega',
-        titulo: 'Bodega San Lorenzo',
-        ubicacion: 'San Lorenzo, Tehuacán, Puebla',
-        precio: 23000,
-        precioTexto: '$23,000/mes',
-        coordenadas: { 
-            lat: 18.456389, 
-            lng: -97.400556 
-        },
-        descripcion: ` 🏭 Excelente bodega industrial en renta en la zona de San Lorenzo, una de las áreas con mayor crecimiento comercial e industrial de Tehuacán.
-
-        📍 Ubicación estratégica con amplios accesos para maniobras de carga y descarga, perfecta para actividades logísticas y de producción
-        🚛 Espacio versátil que se adapta a las necesidades de tu negocio, ya sea almacenamiento, taller mecánico, producción o distribución.
-        ⚡ Cuenta con instalación eléctrica trifásica, ideal para operaciones que requieren maquinaria pesada y alto consumo energético.`,
-
-      
-        caracteristicas: [
-            { icon: 'fa-ruler-combined', label: 'Superficie', value: '400 m²' },
-            { icon: 'fa-bolt', label: 'Tipo de luz', value: 'Trifásica' },
-            { icon: 'fa-warehouse', label: 'Uso', value: 'Industrial/Logístico' },
-            { icon: 'fa-truck', label: 'Maniobras', value: 'Amplio espacio' }
-        ],
-        amenidades: [],
-        fotos: 3,
-        folder: 'propiedades-renta/bodega-san-lorenzo400',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-san-lorenzo400/fotos-bodega-san-lorenzo400.zip`
-    },
     'oficina-2-norte': {
     id: 'oficina-2-norte',
     tipo: 'renta',
@@ -684,6 +671,7 @@ function renderAmenities(amenidades) {
         'Áreas comunes': 'fa-people-arrows',
         'Cerca de escuelas': 'fa-school',
         'Zona transitada': 'fa-route',
+        'Acceso pavimentado': 'fa-route',
         'Zona privada': 'fa-lock',
         'Tranquilidad': 'fa-spa',
         'Céntrico': 'fa-map-pin',
