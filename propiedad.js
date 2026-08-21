@@ -4,59 +4,100 @@ const SUPABASE_URL = 'https://bjzwbpkkazhczwtsxtey.supabase.co';
 
 // Datos completos de propiedades con coordenadas y descripciones
 const propiedadesData = {
-    'departamento-4-poniente': {
-    id: 'departamento-4-poniente',
-    tipo: 'renta',
-    categoria: 'Departamento',
-    titulo: 'Departamento 4 Poniente',
-    ubicacion: '4 Poniente, Centro, Tehuacán, Puebla',
-    precio: 7000,
-    precioTexto: '$7,000/mes',
+    'terreno-antigua-magdalena': {
+    id: 'terreno-antigua-magdalena',
+    tipo: 'venta',
+    categoria: 'Terreno',
+    titulo: 'Terreno Antigua Magdalena',
+    ubicacion: 'Antigua Magdalena, San Lorenzo Teotipilco, Tehuacán, Puebla',
+    precio: 2950000,
+    precioTexto: '$2,950,000',
     coordenadas: { 
-        lat: 18.461389,    // Aproximado - Centro de Tehuacán
-        lng: -97.393889    // Aproximado - Centro de Tehuacán
+        lat: 18.480389,    // 18°28'49.4"N
+        lng: -97.416417    // 97°24'59.1"W
     },
     
-    descripcion: `🏢 Excelente departamento en renta en la céntrica calle 4 Poniente, una ubicación privilegiada que combina la tranquilidad de un entorno residencial con la cercanía a los principales servicios de Tehuacán.
+    descripcion: `🌳 Excelente oportunidad de inversión en la Antigua Magdalena, San Lorenzo Teotipilco, una de las zonas con mayor proyección de crecimiento y plusvalía en Tehuacán.
 
-    📍 Ubicado en planta alta, este espacio ofrece una ubicación inmejorable a solo dos cuadras de la Clínica 30 del IMSS y a una cuadra del parque ecológico, brindándote acceso rápido a servicios de salud y áreas verdes para disfrutar en familia.
+    📐 Este terreno de 522 m² presenta una característica única que lo hace excepcionalmente versátil: está conformado por dos predios con escrituras independientes (316 m² y 206 m²), lo que te brinda la flexibilidad de desarrollar un proyecto unificado que aproveche todo el espacio disponible, o mantener dos propiedades separadas con sus propias escrituras.
 
-    🛏️ Cuenta con 3 recámaras con clóset, ofreciendo espacios cómodos y funcionales para cada miembro de la familia, asegurando privacidad y orden en el día a día.
+    📍 La ubicación en la Antigua Magdalena garantiza un entorno residencial tranquilo pero con excelente conectividad a las vías principales de Tehuacán, lo que lo convierte en una opción ideal tanto para inversionistas que buscan un proyecto de desarrollo inmobiliario como para familias que desean construir su hogar soñado en un espacio amplio y bien ubicado.
 
-    🛋️ Su distribución ha sido cuidadosamente diseñada para maximizar el confort, con sala, comedor, cocina y área de lavado, creando ambientes amplios y bien iluminados que invitan a la convivencia familiar.
-
-    🚗 Su ubicación estratégica te permite moverte con facilidad por toda la ciudad, estando cerca de comercios, escuelas y vías principales.
-
-    🎯 Ideal para quienes buscan un entorno tranquilo y bien ubicado, con espacios cómodos y funcionales para disfrutar de la mejor calidad de vida en el centro de Tehuacán.
-
-    ⚠️ Por reglamento, no se aceptan mascotas ni estudiantes.
-
-    ✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la comodidad, la ubicación y la tranquilidad se unen para ofrecerte la mejor experiencia de vida en el centro de Tehuacán.`,
+    📈 Su potencial de plusvalía y su versatilidad hacen de este terreno una inversión inteligente en el mercado inmobiliario de Tehuacán.`,
         
         caracteristicas: [
-            { icon: 'fa-bed', label: 'Recámaras', value: '3 (con clóset)' },
-            { icon: 'fa-bath', label: 'Baños', value: '1' },
-            { icon: 'fa-arrow-up', label: 'Ubicación', value: 'Planta alta' },
-            { icon: 'fa-sofa', label: 'Sala/Comedor', value: 'Incluidos' },
-            { icon: 'fa-utensils', label: 'Cocina', value: 'Incluida' },
-            { icon: 'fa-washing-machine', label: 'Área de lavado', value: 'Incluida' }
+            { icon: 'fa-ruler-combined', label: 'Superficie total', value: '522 m²' },
+            { icon: 'fa-layer-group', label: 'Predio 1', value: '316 m²' },
+            { icon: 'fa-layer-group', label: 'Predio 2', value: '206 m²' },
+            { icon: 'fa-file-signature', label: 'Escrituras', value: 'Independientes' }
         ],
         
         amenidades: [
             'Excelente ubicación',
-            'Céntrico',
-            'Fácil acceso',
-            'Zona transitada',
-            'Cerca de hospital',
-            'Cerca de áreas verdes',
-            'Planta alta',
-            'Tranquilidad'
+            'Potencial de desarrollo',
+            'Plusvalía garantizada',
+            'Dos predios en uno'
         ],
         
-        fotos: 13,  
-        folder: 'propiedades-renta/departamento_centro',
-        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/departamento_centro/departamento_centro.zip`
+        fotos: 3,
+        folder: 'propiedades-venta/terreno-san-lorenzo',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
     },
+    'bodega-santa-cruz-buenavista': {
+    id: 'bodega-santa-cruz-buenavista',
+    tipo: 'renta',
+    categoria: 'Bodega',
+    titulo: 'Bodega Comercial Santa Cruz Buenavista',
+    ubicacion: 'Calzada Zavaleta, Santa Cruz Buenavista, Puebla',
+    precio: 670000,
+    precioTexto: '$670,000/mes',
+    
+    // 📍 COORDENADAS (aproximadas - Santa Cruz Buenavista, Puebla)
+    coordenadas: { 
+        lat: 19.028333,    
+        lng: -98.205278    
+    },
+    
+    // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
+        descripcion: `🏭 Impresionante bodega comercial en renta en la exclusiva Calzada Zavaleta, uno de los corredores industriales y logísticos más importantes de Puebla.
+
+    📐 Con una superficie operativa de 2,750 m² y posibilidad de expansión a 3,000 m², este inmueble está diseñado para albergar operaciones de gran escala.
+    🏗️ Su estructura de 3 plantas con alturas de 6 a 7 metros ofrece versatilidad para almacenamiento, distribución y áreas operativas, todo iluminado con tecnología 100% LED para máxima eficiencia energética.
+    🛗 Cuenta con un elevador Mitsubishi para 8 personas con mantenimiento incluido, además de espacio estructural disponible para un segundo elevador, brindando una excelente movilidad vertical.
+    💧 La propiedad está equipada con 2 pozos de agua y servicio de agua potable, garantizando el suministro para todo tipo de operaciones.
+    ⚡ Transformador de 75 kVA que asegura la capacidad energética necesaria para maquinaria y equipos industriales.
+    🏢 La oficina privada premium incluye puerta de seguridad, baño independiente y una espectacular terraza privada de 100 m², ideal para reuniones ejecutivas o áreas de descanso.
+    🚚 Con estacionamiento para 12 vehículos y la posibilidad de expandir a 40+ espacios con el lote aledaño, más servicio de valet parking fijo cubierto por el propietario, la logística de tu personal y visitas está completamente resuelta.
+
+    🎯 El espacio perfecto para corporativos, grandes centros de distribución o centros operativos que buscan eficiencia y crecimiento.`,
+        
+    // 📊 CARACTERÍSTICAS: Datos medibles (se pueden contar)
+    caracteristicas: [
+        { icon: 'fa-ruler-combined', label: 'Superficie', value: '2,750 m²' },
+        { icon: 'fa-layer-group', label: 'Plantas', value: '3' },
+        { icon: 'fa-arrows-alt-v', label: 'Altura', value: '6-7 m' },
+        { icon: 'fa-arrows-alt-h', label: 'Frente x Fondo', value: '17m x 79m' },
+        { icon: 'fa-toilet', label: 'Baños', value: '5' },
+        { icon: 'fa-car', label: 'Estacionamiento', value: '12' },
+        { icon: 'fa-elevator', label: 'Elevador', value: 'Mitsubishi 8 pers.' },
+        { icon: 'fa-bolt', label: 'Transformador', value: '75 kVA' }
+        
+    ],
+    
+    // ✨ AMENIDADES: Servicios extras
+    amenidades: [
+        'Pozos de agua',
+        'Agua potable',
+        'Elevador',
+        'Oficina premium',
+        'Terraza privada',
+        'Bodegas de servicio'
+    ],
+    
+    fotos: 13,
+    folder: 'propiedades-renta/bodega-santa-cruz-buenavista',
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/bodega-santa-cruz-buenavista/fotos-bodega-santa-cruz.zip`
+},
   'suite-ejecutiva-hotel-boutique': {
     id: 'suite-ejecutiva-hotel-boutique',
     tipo: 'renta',
@@ -72,20 +113,20 @@ const propiedadesData = {
     
     descripcion: `✨ Suite ejecutiva en renta en el exclusivo Hotel Boutique Tehuacán, ubicada en 1 Poniente, en el corazón del Centro de Tehuacán, ofreciendo una experiencia de vida premium sin precedentes.
 
-🛏️ Esta suite amueblada cuenta con 1 recámara equipada con 2 camas, ideal para ejecutivos o profesionistas que buscan máximo confort y un espacio listo para habitar desde el primer día.
+    🛏️ Esta suite amueblada cuenta con 1 recámara equipada con 2 camas, ideal para ejecutivos o profesionistas que buscan máximo confort y un espacio listo para habitar desde el primer día.
 
-📺 Totalmente equipada con TV, clóset, burós y mueble con espejo, cada detalle ha sido cuidadosamente seleccionado para brindar una estancia placentera y funcional.
+    📺 Totalmente equipada con TV, clóset, burós y mueble con espejo, cada detalle ha sido cuidadosamente seleccionado para brindar una estancia placentera y funcional.
 
-💡 Disfruta del concepto All-Inclusive: olvídate de los recibos, tu renta ya cubre agua caliente, luz e internet, permitiéndote enfocarte en lo que realmente importa sin preocupaciones adicionales.
+    💡 Disfruta del concepto All-Inclusive: olvídate de los recibos, tu renta ya cubre agua caliente, luz e internet, permitiéndote enfocarte en lo que realmente importa sin preocupaciones adicionales.
 
-🧹 Incluye servicio de limpieza a la habitación, brindándote un estilo de vida sin preocupaciones donde cada día encuentras tu espacio impecable y acogedor.
+    🧹 Incluye servicio de limpieza a la habitación, brindándote un estilo de vida sin preocupaciones donde cada día encuentras tu espacio impecable y acogedor.
 
-🚗 Cuenta con 1 estacionamiento incluido, garantizando comodidad y seguridad para tu vehículo.
+    🚗 Cuenta con 1 estacionamiento incluido, garantizando comodidad y seguridad para tu vehículo.
 
-🎯 Ideal para ejecutivos y profesionistas que buscan máximo confort y un estilo de vida sin preocupaciones, con la seguridad y prestigio de vivir dentro de un hotel de alto nivel.
+    🎯 Ideal para ejecutivos y profesionistas que buscan máximo confort y un estilo de vida sin preocupaciones, con la seguridad y prestigio de vivir dentro de un hotel de alto nivel.
 
-✨ ¡Vive la experiencia premium que mereces en el corazón de Tehuacán!`,
-    
+    ✨ ¡Vive la experiencia premium que mereces en el corazón de Tehuacán!`,
+        
     caracteristicas: [
         { icon: 'fa-bed', label: 'Recámara', value: '1 (2 camas)' },
         { icon: 'fa-bath', label: 'Baños', value: '1 completo' },
@@ -129,16 +170,16 @@ const propiedadesData = {
     
     descripcion: `🏢 Excelente loft comercial en renta en el exclusivo Edificio Escamilla, ubicado en Tres Oriente esquina con Segunda de Morelos, en el corazón del Centro de Tehuacán.
 
-📍 Ubicación inmejorable en el primer cuadro de la ciudad, justo atrás de la Catedral, ofreciendo una vista privilegiada y una presencia comercial de alto prestigio en la zona más emblemática de Tehuacán.
+    📍 Ubicación inmejorable en el primer cuadro de la ciudad, justo atrás de la Catedral, ofreciendo una vista privilegiada y una presencia comercial de alto prestigio en la zona más emblemática de Tehuacán.
 
-🏢 Este loft comercial (Loft 1) se encuentra en la planta alta del edificio, arriba de Megaempeños, brindando privacidad y exclusividad para tu negocio o consultorio.
+    🏢 Este loft comercial (Loft 1) se encuentra en la planta alta del edificio, arriba de Megaempeños, brindando privacidad y exclusividad para tu negocio o consultorio.
 
-✨ Cuenta con calentador eléctrico, garantizando confort térmico durante todo el año, y una práctica media barra de cocina que añade funcionalidad y versatilidad al espacio.
+    ✨ Cuenta con calentador eléctrico, garantizando confort térmico durante todo el año, y una práctica media barra de cocina que añade funcionalidad y versatilidad al espacio.
 
-🎯 Ideal para oficinas, consultorios o negocios que buscan una ubicación premium en el corazón de la ciudad, con fácil acceso y alta visibilidad para tus clientes.
+    🎯 Ideal para oficinas, consultorios o negocios que buscan una ubicación premium en el corazón de la ciudad, con fácil acceso y alta visibilidad para tus clientes.
 
-💼 ¡Establece tu negocio en una de las ubicaciones más cotizadas de Tehuacán y ofrece a tus clientes una experiencia de primer nivel!`,
-    
+    💼 ¡Establece tu negocio en una de las ubicaciones más cotizadas de Tehuacán y ofrece a tus clientes una experiencia de primer nivel!`,
+        
     caracteristicas: [
         { icon: 'fa-building', label: 'Edificio', value: 'Escamilla' },
         { icon: 'fa-toilet', label: 'Baños', value: '1' },
@@ -177,17 +218,17 @@ const propiedadesData = {
     
     descripcion: `🏠 Excelente cuarto en renta en la transitada Calle 16 Norte, en la zona de Aquiles Serdán, una ubicación accesible y bien comunicada dentro de Tehuacán.
 
-📍 Este espacio ha sido diseñado para ofrecer funcionalidad y comodidad en un formato práctico, ideal para quienes buscan un lugar independiente y bien ubicado.
+    📍 Este espacio ha sido diseñado para ofrecer funcionalidad y comodidad en un formato práctico, ideal para quienes buscan un lugar independiente y bien ubicado.
 
-🛏️ Cuenta con 1 recámara y 1 baño completo, distribuidos en un espacio de 30 m² que aprovecha cada rincón para brindar calidez y privacidad.
+    🛏️ Cuenta con 1 recámara y 1 baño completo, distribuidos en un espacio de 30 m² que aprovecha cada rincón para brindar calidez y privacidad.
 
-🍳 Incluye un área de cocina, permitiéndote preparar tus alimentos con total independencia y comodidad en tu día a día.
+    🍳 Incluye un área de cocina, permitiéndote preparar tus alimentos con total independencia y comodidad en tu día a día.
 
-💧 Una de sus principales ventajas es que el servicio de agua ya está incluido en la renta, simplificando tus gastos mensuales y brindándote tranquilidad.
+    💧 Una de sus principales ventajas es que el servicio de agua ya está incluido en la renta, simplificando tus gastos mensuales y brindándote tranquilidad.
 
-🐶 ¡Se aceptan mascotas! Este espacio es perfecto para ti y tu compañero peludo, ofreciéndoles un hogar cómodo y acogedor.
+    🐶 ¡Se aceptan mascotas! Este espacio es perfecto para ti y tu compañero peludo, ofreciéndoles un hogar cómodo y acogedor.
 
-✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la funcionalidad, la ubicación y la comodidad se unen para ofrecerte una excelente opción de vivienda en Tehuacán.`,
+    ✨ ¡Haz de este espacio tu próximo hogar! Un lugar donde la funcionalidad, la ubicación y la comodidad se unen para ofrecerte una excelente opción de vivienda en Tehuacán.`,
     
     caracteristicas: [
         { icon: 'fa-bed', label: 'Recámara', value: '1' },
@@ -270,9 +311,9 @@ const propiedadesData = {
         precioTexto: '$8,000,000',
         coordenadas: { lat: 18.483472, lng: -97.420028 },
         descripcion: `✨ 𝗘𝘀𝗽𝗲𝗰𝘁𝗮𝗰𝘂𝗹𝗮𝗿 𝗿𝗲𝘀𝗶𝗱𝗲𝗻𝗰𝗶𝗮 en Fraccionamiento Cinco Bosques 🌳 Tehuacán, Puebla.📍
-💰 Precio: $8,000,000 MXN
+    💰 Precio: $8,000,000 MXN
 
-Si buscas una casa con 𝗲𝗹𝗲𝗴𝗮𝗻𝗰𝗶𝗮, 𝗰𝗼𝗻𝗳𝗼𝗿𝘁 𝘆 𝗮𝗰𝗮𝗯𝗮𝗱𝗼𝘀 𝗱𝗲 𝗮𝗹𝘁𝗮 𝗰𝗮𝗹𝗶𝗱𝗮𝗱, esta propiedad de 2 plantas en exclusivo fraccionamiento es tu mejor opción.`,
+    Si buscas una casa con 𝗲𝗹𝗲𝗴𝗮𝗻𝗰𝗶𝗮, 𝗰𝗼𝗻𝗳𝗼𝗿𝘁 𝘆 𝗮𝗰𝗮𝗯𝗮𝗱𝗼𝘀 𝗱𝗲 𝗮𝗹𝘁𝗮 𝗰𝗮𝗹𝗶𝗱𝗮𝗱, esta propiedad de 2 plantas en exclusivo fraccionamiento es tu mejor opción.`,
         caracteristicas: [
             { icon: 'fa-bed', label: 'Recámaras', value: '4' },
             { icon: 'fa-bath', label: 'Baños', value: '4' },
@@ -297,9 +338,9 @@ Si buscas una casa con 𝗲𝗹𝗲𝗴𝗮𝗻𝗰𝗶𝗮, 𝗰𝗼𝗻𝗳�
         precioTexto: '$14,000,000',
         coordenadas: { lat: 18.472278, lng: -97.393194 },
         descripcion: `✨ 𝗘𝘅𝗰𝗲𝗽𝗰𝗶𝗼𝗻𝗮𝗹 𝗿𝗲𝘀𝗶𝗱𝗲𝗻𝗰𝗶𝗮 𝗰𝗼𝗻 𝗮𝗺𝗽𝗹𝗶𝗼 𝘁𝗲𝗿𝗿𝗲𝗻𝗼 𝘆 𝗮𝗹𝗯𝗲𝗿𝗰𝗮 🏊‍♂️ Francisco Sarabia, Tehuacán.📍
-💰 Precio: $14,000,000 MXN
+    💰 Precio: $14,000,000 MXN
 
-Si buscas una propiedad con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳𝗶𝗻𝗶𝘁𝗼, 𝗲𝘀𝗽𝗮𝗰𝗶𝗼𝘀 𝗴𝗲𝗻𝗲𝗿𝗼𝘀𝗼𝘀 𝘆 𝘇𝗼𝗻𝗮𝘀 𝗱𝗲 𝗿𝗲𝗰𝗿𝗲𝗮𝗰𝗶𝗼́𝗻, esta es tu oportunidad.`,
+    Si buscas una propiedad con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳𝗶𝗻𝗶𝘁𝗼, 𝗲𝘀𝗽𝗮𝗰𝗶𝗼𝘀 𝗴𝗲𝗻𝗲𝗿𝗼𝘀𝗼𝘀 𝘆 𝘇𝗼𝗻𝗮𝘀 𝗱𝗲 𝗿𝗲𝗰𝗿𝗲𝗮𝗰𝗶𝗼́𝗻, esta es tu oportunidad.`,
         caracteristicas: [
             { icon: 'fa-bed', label: 'Recámaras', value: '4' },
             { icon: 'fa-bath', label: 'Baños', value: '2' },
@@ -323,19 +364,19 @@ Si buscas una propiedad con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳�
         precioTexto: '$300,000',
         coordenadas: { lat: 18.512417, lng: -97.432889 },
         descripcion: `📍 UBICACIÓN:
-Parque Industrial II, Manzana 3, Lote L-33
-Tehuacán, Puebla
+        Parque Industrial II, Manzana 3, Lote L-33
+        Tehuacán, Puebla
 
-📐 CARACTERÍSTICAS:
-• Superficie: 120 m²
-• Frente: 7.50 metros
-• Fondo: 16.00 metros
-• Forma: Regular
-• Uso de suelo: Habitacional
+        📐 CARACTERÍSTICAS:
+        • Superficie: 120 m²
+        • Frente: 7.50 metros
+        • Fondo: 16.00 metros
+        • Forma: Regular
+        • Uso de suelo: Habitacional
 
-⚠️ CONDICIONES:
-• Vía de acceso: Terracería
-• Sin servicios (luz, agua, drenaje)`,
+        ⚠️ CONDICIONES:
+        • Vía de acceso: Terracería
+        • Sin servicios (luz, agua, drenaje)`,
         caracteristicas: [
             { icon: 'fa-ruler-combined', label: 'Terreno', value: '120 m²' },
             { icon: 'fa-arrows-alt-h', label: 'Frente', value: '7.5 m' },
@@ -363,13 +404,13 @@ Tehuacán, Puebla
     // 📝 DESCRIPCIÓN: Solo texto narrativo (sin datos repetidos)
     descripcion: `🏭 Impresionante bodega industrial en renta en la zona de San Diego, uno de los polos de desarrollo industrial más importantes de Tehuacán.
 
-📐 Con 900 m² de espacio, esta propiedad ofrece la versatilidad y capacidad necesaria para proyectos de gran envergadura, desde operaciones logísticas hasta producción manufacturera.
+    📐 Con 900 m² de espacio, esta propiedad ofrece la versatilidad y capacidad necesaria para proyectos de gran envergadura, desde operaciones logísticas hasta producción manufacturera.
 
-🏢 Cuenta con áreas de oficinas integradas, lo que permite centralizar la administración y las operaciones en un mismo lugar, optimizando la eficiencia de tu negocio.
+    🏢 Cuenta con áreas de oficinas integradas, lo que permite centralizar la administración y las operaciones en un mismo lugar, optimizando la eficiencia de tu negocio.
 
-💼 Ideal para corporativos, grandes empresas de logística o fábricas que buscan un espacio funcional y bien ubicado.
+    💼 Ideal para corporativos, grandes empresas de logística o fábricas que buscan un espacio funcional y bien ubicado.
 
-⚡ ¡Excelente oportunidad con precio negociable! Aprovecha este espacio único para impulsar tu negocio al siguiente nivel.`,
+    ⚡ ¡Excelente oportunidad con precio negociable! Aprovecha este espacio único para impulsar tu negocio al siguiente nivel.`,
     
     // 📊 CARACTERÍSTICAS: Solo datos medibles
     caracteristicas: [
@@ -468,13 +509,13 @@ Tehuacán, Puebla
     
     // 📝 DESCRIPCIÓN: Solo texto narrativo (sin datos repetidos)
     descripcion: `💼 Espacios diseñados especialmente para atención profesional, con distribución funcional que permite recibir pacientes y clientes con comodidad y privacidad.
-📍 Ubicación estratégica a solo una cuadra del Centro Escolar, con fácil acceso y alta visibilidad para tu consulta u oficina.
-👨‍⚕️ Perfecto para especialistas médicos, arquitectos, contadores, constructoras, psicólogos, fisioterapeutas y cualquier profesional que busque un espacio de trabajo de primer nivel.
+    📍 Ubicación estratégica a solo una cuadra del Centro Escolar, con fácil acceso y alta visibilidad para tu consulta u oficina.
+    👨‍⚕️ Perfecto para especialistas médicos, arquitectos, contadores, constructoras, psicólogos, fisioterapeutas y cualquier profesional que busque un espacio de trabajo de primer nivel.
 
-✨ Servicios incluidos:
-• Recepcionista profesional en áreas comunes
-• Ambiente profesional y seguro
-• Excelente ubicación cerca de escuelas y comercios`,
+    ✨ Servicios incluidos:
+    • Recepcionista profesional en áreas comunes
+    • Ambiente profesional y seguro
+    • Excelente ubicación cerca de escuelas y comercios`,
     
     // 📊 CARACTERÍSTICAS: Solo datos medibles
     caracteristicas: [
