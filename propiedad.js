@@ -780,24 +780,47 @@ function renderSimilarProperties(similar) {
         return;
     }
     
-    container.innerHTML = similar.map(p => `
-        <div class="property-card">
-            <div class="property-image">
-                <img src="${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/${p.folder}/1.webp" alt="${p.titulo}" loading="lazy">
-                <span class="property-badge">${p.categoria}</span>
-            </div>
-            <div class="property-info">
-                <div class="property-type">${p.tipo === 'venta' ? 'En Venta' : 'En Renta'}</div>
-                <h3 class="property-title">${p.titulo}</h3>
-                <div class="property-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    ${p.ubicacion.split(',')[0]}
+    container.innerHTML = similar.map(p => {
+        // Extraer características si existen
+        const features = [];
+        if (p.caracteristicas) {
+            p.caracteristicas.forEach(c => {
+                features.push(`<span class="property-feature"><i class="fas ${c.icon}"></i> ${c.value}</span>`);
+            });
+        }
+
+        return `
+            <div class="property-card">
+                <!-- Enlace que envuelve toda la imagen e información -->
+                <a href="propiedad.html?id=${p.id}" class="property-card-link">
+                    <div class="property-image">
+                        <img src="${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/${p.folder}/1.webp" alt="${p.titulo}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/8B1E3F/FFFFFF?text=IRE+Inmobiliaria'">
+                        <span class="property-badge">${p.categoria}</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-type">${p.tipo === 'venta' ? 'En Venta' : 'En Renta'}</div>
+                        <h3 class="property-title">${p.titulo}</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            ${p.ubicacion.split(',')[0]}
+                        </div>
+                        <div class="property-price">${p.precioTexto}</div>
+                        ${features.length > 0 ? `<div class="property-features">${features.slice(0, 3).join('')}</div>` : ''}
+                    </div>
+                </a>
+                
+                <!-- Botones de acción independientes -->
+                <div class="property-actions">
+                    <a href="propiedad.html?id=${p.id}" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Ver detalles
+                    </a>
+                    <a href="https://wa.me/522228515440?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(p.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
                 </div>
-                <div class="property-price">${p.precioTexto}</div>
-                <a href="propiedad.html?id=${p.id}" class="btn btn-primary btn-full">Ver detalles</a>
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Cargar propiedad

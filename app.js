@@ -225,29 +225,34 @@ function crearTarjetaPropiedad(prop) {
 
     return `
         <div class="property-card">
-            <div class="property-image">
-                <img src="${prop.imagen}" alt="${prop.titulo}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/8B1E3F/FFFFFF?text=IRE+Inmobiliaria'">
-                <span class="property-badge">${prop.categoria}</span>
-            </div>
-            <div class="property-info">
-                <div class="property-type">${prop.tipo === 'venta' ? 'En Venta' : 'En Renta'}</div>
-                <h3 class="property-title">${prop.titulo}</h3>
-                <div class="property-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    ${prop.ubicacion}
+            <!-- Enlace envolvente para toda la tarjeta -->
+            <a href="propiedad.html?id=${prop.id}" class="property-card-link">
+                <div class="property-image">
+                    <img src="${prop.imagen}" alt="${prop.titulo}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/8B1E3F/FFFFFF?text=IRE+Inmobiliaria'">
+                    <span class="property-badge">${prop.categoria}</span>
                 </div>
-                <div class="property-price">${prop.precioTexto}</div>
-                <div class="property-features">
-                    ${features.join('')}
+                <div class="property-info">
+                    <div class="property-type">${prop.tipo === 'venta' ? 'En Venta' : 'En Renta'}</div>
+                    <h3 class="property-title">${prop.titulo}</h3>
+                    <div class="property-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        ${prop.ubicacion}
+                    </div>
+                    <div class="property-price">${prop.precioTexto}</div>
+                    <div class="property-features">
+                        ${features.join('')}
+                    </div>
                 </div>
-                <div class="property-actions">
-                    <a href="propiedad.html?id=${prop.id}" class="btn btn-primary">
-                        <i class="fas fa-eye"></i> Ver detalles
-                    </a>
-                    <a href="https://wa.me/522228515440?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(prop.titulo)}" class="btn btn-outline" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contactar
-                    </a>
-                </div>
+            </a>
+            
+            <!-- Botones de acción -->
+            <div class="property-actions">
+                <a href="propiedad.html?id=${prop.id}" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> Ver detalles
+                </a>
+                <a href="https://wa.me/522228515440?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(prop.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
+                    <i class="fab fa-whatsapp"></i> Contactar
+                </a>
             </div>
         </div>
     `;

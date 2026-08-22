@@ -661,3 +661,25 @@ body {
     border-radius: 8px;
     text-align: center;
 }
+/* Hacer toda la tarjeta cliqueable sin alterar los colores */
+.property-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.property-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Mantener el diseño padding dentro de la tarjeta */
+.property-card .property-actions {
+    padding: 0 25px 25px 25px;
+}
+
+/* Efecto hover al pasar sobre la tarjeta */
+.property-card:hover .property-title {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
