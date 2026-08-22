@@ -90,6 +90,43 @@ const propiedadesData = {
         folder: 'propiedades-venta/terreno-san-lorenzo',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/terreno-san-lorenzo/terreno_snlorenzo.zip`
     },
+    
+    'local-oficina-centro': {
+    id: 'local-oficina-centro',
+    tipo: 'renta',
+    categoria: 'Oficina',
+    titulo: 'Local para Oficina Col. Centro',
+    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+    precio: 10000,
+    precioTexto: '$10,000/mes',
+    coordenadas: { 
+        lat: 18.462083, 
+        lng: -97.395722 
+    },
+    descripcion: `📍 Este local en planta baja, ubicado sobre la transitada 1 Poniente, te ofrece la visibilidad y accesibilidad que tu negocio necesita para recibir clientes con total comodidad.
+    🌡️ Disfruta de un espacio perfectamente climatizado que te permitirá trabajar en un ambiente agradable sin importar la temporada del año.
+    💼 Su distribución funcional y ubicación estratégica lo convierten en el lugar ideal para profesionales que valoran la practicidad y la buena ubicación.
+    🌟 Aprovecha los servicios básicos ya cubiertos y enfócate en lo que realmente importa: hacer crecer tu proyecto profesional.
+
+    🚀 ¡Un espacio listo para que llegues y empieces a trabajar!`,
+
+        caracteristicas: [
+        { icon: 'fa-building', label: 'Tipo', value: 'Local/Oficina' },
+        { icon: 'fa-map-pin', label: 'Zona', value: 'Col. Centro' },
+        ],
+
+        amenidades: [
+        'Agua incluida',
+        'Internet incluido',
+        'Clima incluido',
+        'Fácil acceso',
+        'Céntrico',
+        'Zona transitada'
+        ],
+        fotos: 3,
+        folder: '/propiedades-renta/oficina-royal-place/',
+        zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+    },
     'bodega-santa-cruz-buenavista': {
     id: 'bodega-santa-cruz-buenavista',
     tipo: 'renta',

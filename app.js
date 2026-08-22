@@ -78,6 +78,20 @@ const propiedades = [
         fotos: 14, 
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/casa_sarabia/casa_sarabia.zip`
     },{
+    id: 'local-oficina-centro',
+    tipo: 'renta',
+    categoria: 'Local Comercial',
+    titulo: 'Local para Oficina Centro',
+    ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
+    precio: 10000,
+    precioTexto: '$10,000/mes',
+    metros: 0, 
+    habitaciones: null,
+    banos: null,
+    imagen: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/1.webp`,
+    fotos: 3, 
+    zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/oficina-royal-place/fotos-oficina-royal-place.zip`
+    },{
         id: 'terreno-parque-industrial2',
         tipo: 'venta',
         categoria: 'Terreno',
