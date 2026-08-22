@@ -14,12 +14,12 @@ const propiedadesData = {
     precio: 15000,
     precioTexto: '$15,000/mes',
     
-    // 📍 COORDENADAS (aproximadas - San Lorenzo, Tehuacán)
+    //    📍 COORDENADAS (San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.456389,    // Aproximado - San Lorenzo
-        lng: -97.400556    // Aproximado - San Lorenzo
+        lat: 18.482389,    
+        lng: -97.455500    
     },
-    
+
     // 📝 DESCRIPCIÓN: Texto narrativo sin repetir datos
     descripcion: `🏭 Excelente bodega en renta en una ubicación estratégica de Tehuacán, sobre la transitada Avenida Pueblo Bonito en su esquina con 12 de Diciembre.
 
@@ -59,9 +59,10 @@ const propiedadesData = {
     ubicacion: 'Antigua Magdalena, San Lorenzo Teotipilco, Tehuacán, Puebla',
     precio: 2950000,
     precioTexto: '$2,950,000',
+   // 📍 COORDENADAS (San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.480389,    // 18°28'49.4"N
-        lng: -97.416417    // 97°24'59.1"W
+        lat: 18.480389,    
+        lng: -97.416389    
     },
     
     descripcion: `🌳 Excelente oportunidad de inversión en la Antigua Magdalena, San Lorenzo Teotipilco, una de las zonas con mayor proyección de crecimiento y plusvalía en Tehuacán.
@@ -99,9 +100,10 @@ const propiedadesData = {
     ubicacion: '1 Poniente No. 135, Col. Centro, Tehuacán, Puebla',
     precio: 10000,
     precioTexto: '$10,000/mes',
+    // 📍 COORDENADAS (San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.462083, 
-        lng: -97.395722 
+        lat: 18.462056,    
+        lng: -97.395667    
     },
     descripcion: `📍 Este local en planta baja, ubicado sobre la transitada 1 Poniente, te ofrece la visibilidad y accesibilidad que tu negocio necesita para recibir clientes con total comodidad.
     🌡️ Disfruta de un espacio perfectamente climatizado que te permitirá trabajar en un ambiente agradable sin importar la temporada del año.
@@ -190,9 +192,10 @@ const propiedadesData = {
     ubicacion: '1 Poniente, Hotel Boutique Tehuacán, Centro, Tehuacán, Puebla',
     precio: 7500,
     precioTexto: '$7,500/mes (¡Todos los servicios incluidos!)',
+   // 📍 COORDENADAS (San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.461667,    // Aproximado - Centro de Tehuacán
-        lng: -97.395278    // Aproximado - Centro de Tehuacán
+        lat: 18.462056,    
+        lng: -97.395667    
     },
     
     descripcion: `✨ Suite ejecutiva en renta en el exclusivo Hotel Boutique Tehuacán, ubicada en 1 Poniente, en el corazón del Centro de Tehuacán, ofreciendo una experiencia de vida premium sin precedentes.
@@ -342,9 +345,10 @@ const propiedadesData = {
     ubicacion: 'Calle 6 Ote. esquina con 5 Nte., Col. Francisco Sarabia, Tehuacán, Puebla',
     precio: 16000,
     precioTexto: '$16,000/mes',
+    // 📍 COORDENADAS (San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.472278,    // Aproximado - Francisco Sarabia
-        lng: -97.393194    // Aproximado - Francisco Sarabia
+        lat: 18.468944,    
+        lng: -97.389222    
     },
     
     descripcion: `🏠 Excelente casa en renta en la tranquila y bien establecida Colonia Francisco Sarabia, una de las zonas residenciales más cotizadas de Tehuacán por su ubicación y accesibilidad.
@@ -526,9 +530,10 @@ const propiedadesData = {
     precioTexto: '$5,000/mes',
     
     
+   // 📍 COORDENADAS (Entre 2 y 4 Norte, San Lorenzo, Tehuacán)
     coordenadas: { 
-        lat: 18.463056,   
-        lng: -97.391667    
+        lat: 18.467778,    
+        lng: -97.397500    
     },
     
     // 📝 DESCRIPCIÓN: Solo texto narrativo (sin datos repetidos)
