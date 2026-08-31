@@ -286,7 +286,7 @@ const propiedadesData = {
         'Zona comercial'
     ],
     
-    fotos: 8,  
+    fotos: 7,  
     folder: 'propiedades-renta/loft_centro',
     zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-renta/loft_centro/loft_centro.zip`
 }, 
@@ -412,7 +412,7 @@ const propiedadesData = {
             { icon: 'fa-calendar', label: 'Año construcción', value: '2019' }
         ],
         amenidades: ['Cisterna', 'Estacionamiento techado', 'Garaje', 'Jardín', 'Patio', 'Terraza', 'Alarma', 'Cocina', 'Cuarto de servicio', 'Dos plantas', 'Fraccionamiento privado', 'Oficina'],
-        fotos: 37,
+        fotos: 34,
         folder: 'propiedades-venta/casa-cinco-bosques',
         zip: `${SUPABASE_URL}/storage/v1/object/public/fotos-propiedades/propiedades-venta/casa-cinco-bosques/fotos-cinco-bosques.zip`
     },
@@ -814,7 +814,7 @@ function renderSimilarProperties(similar) {
                     <a href="propiedad.html?id=${p.id}" class="btn btn-primary">
                         <i class="fas fa-eye"></i> Ver detalles
                     </a>
-                    <a href="https://wa.me/522228515440?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(p.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
+                    <a href="https://wa.me/526545535215?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(p.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
                 </div>
@@ -888,7 +888,7 @@ function loadProperty() {
     // WhatsApp
     const whatsappText = `Hola, estoy interesado en ${currentProperty.titulo} (${currentProperty.precioTexto})`;
     document.getElementById('whatsapp-btn').href = 
-        `https://wa.me/522228515440?text=${encodeURIComponent(whatsappText)}`;
+        `https://wa.me/526545535215?text=${encodeURIComponent(whatsappText)}`;
     
     // Propiedades similares
     const similar = findSimilarProperties(currentProperty);
