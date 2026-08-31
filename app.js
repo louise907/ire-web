@@ -250,7 +250,7 @@ function crearTarjetaPropiedad(prop) {
                 <a href="propiedad.html?id=${prop.id}" class="btn btn-primary">
                     <i class="fas fa-eye"></i> Ver detalles
                 </a>
-                <a href="https://wa.me/526545535215?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(prop.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
+                <a href="https://wa.me/525645535215?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(prop.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
                     <i class="fab fa-whatsapp"></i> Contactar
                 </a>
             </div>
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Crear mensaje para WhatsApp
             const texto = `Hola, soy ${nombre}.\\nTel: ${telefono}\\nEmail: ${email || 'No proporcionado'}\\n\\nMensaje: ${mensaje}`;
-            const url = `https://wa.me/526545535215?text=${encodeURIComponent(texto)}`;
+            const url = `https://wa.me/525645535215?text=${encodeURIComponent(texto)}`;
             
             // Abrir WhatsApp
             window.open(url, '_blank');

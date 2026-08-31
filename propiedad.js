@@ -814,7 +814,7 @@ function renderSimilarProperties(similar) {
                     <a href="propiedad.html?id=${p.id}" class="btn btn-primary">
                         <i class="fas fa-eye"></i> Ver detalles
                     </a>
-                    <a href="https://wa.me/526545535215?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(p.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
+                    <a href="https://wa.me/525645535215?text=Hola,%20estoy%20interesado%20en%20${encodeURIComponent(p.titulo)}" class="btn btn-outline" target="_blank" onclick="event.stopPropagation();">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
                 </div>
@@ -888,7 +888,7 @@ function loadProperty() {
     // WhatsApp
     const whatsappText = `Hola, estoy interesado en ${currentProperty.titulo} (${currentProperty.precioTexto})`;
     document.getElementById('whatsapp-btn').href = 
-        `https://wa.me/526545535215?text=${encodeURIComponent(whatsappText)}`;
+        `https://wa.me/525645535215?text=${encodeURIComponent(whatsappText)}`;
     
     // Propiedades similares
     const similar = findSimilarProperties(currentProperty);
